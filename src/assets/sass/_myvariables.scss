@@ -84,3 +84,8 @@ $font-family-sans-serif:  Akrobat, -apple-system, BlinkMacSystemFont, "Segoe UI"
 $font-family-monospace:     Akrobat,  SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace ;
 $font-family-base:            $font-family-sans-serif ;
 // stylelint-enable value-keyword-case
+
+// gutter
+$grid-columns:                12;
+$grid-gutter-width:           30px;
+$gutter: $grid-gutter-width;

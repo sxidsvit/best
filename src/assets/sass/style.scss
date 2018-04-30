@@ -209,8 +209,10 @@ P {
 			margin-top: 9px;
 		}
 	}
-	&__text {
+	&__text p {
 		font-size: 19px;
+		padding: 0 0 0 0;
+		margin-bottom: 0;
 		font-weight: 600;
 		letter-spacing: 0.76px;
 		line-height: 29px
@@ -221,32 +223,52 @@ P {
 	width: 280px;
 	height: 61px;
 	border-radius: 31px;
-	color: #1e1e1e;
-	font-weight: 800;
-	letter-spacing: 1.6px;
-	text-transform: uppercase;
+	margin-top: 2px;
 	margin-left: -$gutter/2-2px;
 	padding: 23px 36px 23px 76px;
-	margin-top: 2px;
-	line-height: 16px;
 	position: relative;
 	transition: left 3s ease;	
-	&:hover {
-		cursor: pointer;
-		transition: left 3s ease;	
-		img {
-			left: 44px;
-		}
+	&__text {
+		font-size: 16px;
+		color: #1e1e1e;
+		font-weight: 800;
+		letter-spacing: 1.6px;
+		text-transform: uppercase;
+		line-height: 16px;		
+		padding: 0 0 0 0;
+		margin-bottom: 0;
 	}
-
-	img {
+	&__img {
 		width: 26px;
 		height: 20px;
 		position: absolute;
 		left: 36px;
 	}
+	&:hover {
+		cursor: pointer;
+		transition: left 3s ease;	
+		.cta-btn__img {
+			left: 44px;
+		}
+	}
+
 }				
 
-
+.card-img-top {
+		width: 26px;
+		height: 20px;
+		position: absolute;
+		left: 36px;
+}
+.card-text {
+		font-size: 16px;
+		color: #1e1e1e;
+		font-weight: 800;
+		letter-spacing: 1.6px;
+		text-transform: uppercase;
+		line-height: 16px;		
+		padding: 0 0 0 0;
+		margin-bottom: 0;
+	}
 
 

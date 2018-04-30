@@ -60,9 +60,8 @@ P {
 
 .header_bg {
 	background: url("../img/hero_overlay.png"), url("../img/hero_1.png")  no-repeat 51% 35%;
-	// background-size: cover;
 	width: 100vw;
-	min-height: 100vh;
+	min-height: 897px;
 	position: absolute;
 	}
 
@@ -216,7 +215,37 @@ P {
 		letter-spacing: 0.76px;
 		line-height: 29px
 	}	
-}							
+}	
+
+.cta-btn {
+	width: 280px;
+	height: 61px;
+	border-radius: 31px;
+	color: #1e1e1e;
+	font-weight: 800;
+	letter-spacing: 1.6px;
+	text-transform: uppercase;
+	margin-left: -$gutter/2-2px;
+	padding: 23px 36px 23px 76px;
+	margin-top: 2px;
+	line-height: 16px;
+	position: relative;
+	transition: left 3s ease;	
+	&:hover {
+		cursor: pointer;
+		transition: left 3s ease;	
+		img {
+			left: 44px;
+		}
+	}
+
+	img {
+		width: 26px;
+		height: 20px;
+		position: absolute;
+		left: 36px;
+	}
+}				
 
 
 

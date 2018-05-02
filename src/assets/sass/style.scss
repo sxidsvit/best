@@ -52,11 +52,24 @@ body {
 	min-height: 1050vh;
 }
 
-P {
+р {
 	font-weight: 400;
 	font-size: 5rem;
 	padding: 0 5rem;
 }
+
+a {
+	color: inherit;
+	border-bottom: 1px solid $yellow;
+	transition: border-bottom 0.3s ease;	
+	text-decoration: none;
+	&:hover {
+		color: inherit;
+		border-bottom: 1px solid darken($yellow, 10%);
+		transition: border-bottom 0.3s ease;
+		text-decoration: none;
+	}
+}		
 
 .header_bg {
 	background: url("../img/hero_overlay.png"), url("../img/hero_1.png")  no-repeat 51%  47%;
@@ -161,22 +174,23 @@ P {
 			font-weight: 400;
 			letter-spacing: 0.3px;
 		}
-			img {
+		img {
 				width: 12px;
 				height: 12px;
 				margin-right: 2px;
-			}
-			a {
+		}
+		a {
 				color: inherit;
-				border-bottom: 1px dashed #f0cb38;
+				border-bottom: 1px dashed $yellow;
 				transition: border-bottom 0.3s ease;	
 				text-decoration: none;
-				}		
-				// &:hover {
-				// 	border-bottom: 1px dashed darken(#f0cb38, 50%);
-				// 	transition: border-bottom 0.3s ease;
-				// 	text-decoration: none;
-				// }
+			&:hover {
+					color: inherit;
+					border-bottom: 2px solid darken($yellow, 20%);
+					transition: border-bottom 0.3s ease;
+					text-decoration: none;
+			}
+		}
 	}
 }
 
@@ -372,6 +386,41 @@ P {
 			}
 		}
 	}
+
+.slides-nav {
+	margin-top: 37px;
+	width: 100%;
+	height: 20px;
+	// background-color: #999;
+	font-size: 14px;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: #232525;
+	&__step {
+		span {
+			display: inline-block;
+			letter-spacing: 1.4px;
+			margin-right: 11px;
+		}
+		.bullit {
+			display: inline-block;
+			width: 15px;
+			height: 15px;
+			color: transparent;
+			border-radius: 100%;
+			background-color: $border-color;	
+			margin-left: 2px;
+			margin-right: 2px;
+			text-align: center;
+			font-weight: 900;
+			line-height: 1;
+		}
+		.bullit.done {
+				background-color: $yellow;	
+				color: #232525;
+		}
+	}
+}
 
 .quizz-promo {
 	flex: 0 1 32%;

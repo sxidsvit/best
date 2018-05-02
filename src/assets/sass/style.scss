@@ -60,7 +60,7 @@ P {
 
 .header_bg {
 	background: url("../img/hero_overlay.png"), url("../img/hero_1.png")  no-repeat 51%  47%;
-	width: 100vw;
+	// width: 100vw;
 	height: 897px;
 	}
 
@@ -273,21 +273,21 @@ P {
 .s-quizz {
 	background:  $bg-color url("../img/bg-mark.png") no-repeat -40% center;
 	min-height: 870px;
-	width: 100vw;
+	// width: 100vw;
 	border-bottom: 1px solid red;
 	padding-top: 90px;
 	padding-bottom: 60px;
  &__title {
 	// width: 688px;
-	height: 85px;
+	// height: 85px;
 	color: #232525;
 	font-size: 34px;
 	font-weight: 800;
 	line-height: 54px;
 	text-align: left;
-	margin-left: 75px;
-	margin-bottom: 88px;
-	margin-top: -12px;
+	margin-left: 98px;
+	margin-bottom: 70px;
+	margin-top: -9px;
 	letter-spacing: 2.72px;
 	}
 }
@@ -295,16 +295,83 @@ P {
 .quizz {
 	min-height: 500px;
 	min-width: 800px;
-	padding-right: 20px;
-	// background-color: #FF9;
 }
 
 .quizz-slides {
-	flex: 0 1 66%;
+	flex: 0 1 67%;
 	border: 5px solid $border-color;
 	min-height: 550px;
 	background-color: #ffffff;
+	padding: 40px 36px 51px 48px;
+	&__title {
+		color: #232525;
+		font-size: 26px;
+		font-weight: 800;
+		line-height: 1;		;
+		letter-spacing: 2.08px;
+		padding-bottom: 37px;
+		margin-bottom: 0;
+		// border-bottom: 1px solid $border-color;
+	}
 }
+
+.quizz-slide {
+	padding-top: 40px;
+	height: 330px;
+	border-top: 1px solid $border-color;
+	border-bottom: 1px solid $border-color;
+		&__bg-img--piс1, &__bg-img--piс2 {
+			background: url("../img/moscow.png")  no-repeat ;
+			background-size: cover;
+			max-width: 310px;
+			height: 250px;
+			flex: 1 0 49%;
+			position: relative;
+		}
+		&__bg-img--piс2 {
+		 	background: url("../img/oblast.png")  no-repeat ;
+		 	background-size: cover;
+			}
+		&__overlay {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			background-color: $overlay;
+			// opacity: 0.4;
+			z-index: 2;
+			// &:hover {
+			// 	opacity: 1;
+			// }
+		}
+		.slide-btn {
+			width: 170px;
+			height: 50px;
+			border-radius: 25px;
+			border: 2px solid darken($border-color, 30%);
+			// z-index: 3;
+			span {
+				color: #fff;
+				font-size: 17px;
+				line-height: 30px;
+				font-weight: 700;
+				text-transform: uppercase;
+				letter-spacing: 1.7px;
+				// opacity: 1;
+				z-index: 10;
+			}
+		}	
+		.slide-btn:hover {
+			cursor: pointer;
+			transition: color 0.8s ease;	
+			span {
+				color: #000;
+				font-weight: 700;
+				transition: color 0.8s ease;	
+			}
+		}
+	}
 
 .quizz-promo {
 	flex: 0 1 32%;
@@ -316,8 +383,8 @@ P {
 	font-weight: 600;
 	line-height: 28px;
 	letter-spacing: 0.6px;
-	padding-right: 19px;
-	padding-left: 19px;
+	padding-right: 30px;
+	padding-left: 30px;
 	padding-bottom: 32px;
 	.profit__item {
 		margin-bottom: 30px;
@@ -328,7 +395,7 @@ P {
 			width: 26px;
 			height: 26px;
 			margin-right: 19px;
-			margin-left: 18px;
+			margin-left: 19px;
 			margin-top: 0;
 			// margin-left: 36px;
 		}	

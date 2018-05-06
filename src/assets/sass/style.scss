@@ -50,6 +50,7 @@ body {
 	font-family: Akrobat;
 	color: $white;
 	min-height: 1050vh;
+	overflow-x: hidden;
 }
 
 р {
@@ -257,7 +258,7 @@ a {
 	}
 	&__img {
 		width: 26px;
-		height: 20px;
+		height: 16px;
 		position: absolute;
 		left: 36px;
 	}
@@ -714,8 +715,6 @@ a {
 	background: $bg-white;
 	padding-top: 24px;
 	padding-bottom: 124px;
-	// border-bottom: 1px solid $yellow;
-	margin-bottom: 40vh;
 	.b-polis {
 		position: relative;
 		&__img-polis {
@@ -827,7 +826,7 @@ a {
 				&:before, &:after {
 					content: "";
 					border-top: 8px solid $border-color; 
-					position: absolute;
+					position: absolute; 
 					top: 7px;
 					width: 100%;
 					right: 100%;
@@ -857,3 +856,94 @@ a {
 		}
 	}
 } // конец секции ипотека
+
+// Section forma
+.s-forma {
+	background: url("../img/bg-3.png")  no-repeat center;
+	min-height: 580px;
+	border-bottom: 2px solid $yellow;
+	margin-bottom: 100vh;
+
+	.b-forma {
+		padding-top: 65px;
+		&__title {
+			// margin-top: -10px;
+			color: $bg-white;
+			font-size: 34px;
+			font-weight: 800;
+			line-height: 54px;
+			text-transform: uppercase;
+			letter-spacing: 2.72px;
+		}
+		&__text {
+			margin-top: 16px;
+			max-width: 476px;
+			opacity: 0.9;
+			color: $bg-white;
+			font-size: 18px;
+			font-weight: 400;
+			line-height: 28px;
+			font-weight: 400;
+			letter-spacing: 0.72px;
+			span {
+				color: $yellow;
+				font-weight: 600;
+				letter-spacing: 0.72px;
+			}
+		}
+
+		form.callback {
+			margin-top: 52px;
+			// margin-right: -70px;
+			.formhead {
+				padding-left: 27px;
+				color: $bg-white;
+				font-size: 14px;
+				font-weight: 400;
+				line-height: 34px;
+				text-transform: uppercase;
+				letter-spacing: 1.68px;
+			}
+			input {
+				display: inline-block;
+				width: 293px;
+				height: 61px;
+				border-radius: 31px;
+				color: $bg-white;
+				border: 2px solid $bg-white;
+				opacity: 0.1;
+			}
+			input::placeholder {
+				width: 175px;
+				height: 21px;
+				color: $bg-white;
+				font-size: 21px;
+				font-weight: 700;
+				line-height: 54px;
+				text-transform: uppercase;
+				letter-spacing: 2.52px;
+			}
+			.cta-btn {
+				display: inline-block;
+				max-width: 228px;
+				padding: 23px 23px 23px 23px;
+				line-height: 1;
+				&__text {
+					text-align: right;
+				}
+				&__img {
+					left: 20px;
+				}
+			}
+		}
+	} // end b-forma
+
+	.b-buklet {
+		position: relative;
+		&__img {
+			position: absolute;
+			margin-left: -54px;
+			margin-top: -204px;
+		} // end-buklet
+	}
+} // end s-forma

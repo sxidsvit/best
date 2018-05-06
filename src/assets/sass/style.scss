@@ -652,7 +652,6 @@ a {
 	min-height: 740px;
 	background-color: #eeeeee;
   background-image: linear-gradient(to top, #d5d8d8 0%, #f2f4f4 100%);
-	border-bottom: 2px solid red;
 	padding-top: 54px;
 	padding-bottom: 72px;
 
@@ -706,8 +705,155 @@ a {
 			z-index: 2;
 		}
 	}
-
-
-
-
 } // конец секции отзывов
+
+
+// Section Ипотека
+.s-ipoteka {
+	// min-height: 1268px;
+	background: $bg-white;
+	padding-top: 24px;
+	padding-bottom: 124px;
+	// border-bottom: 1px solid $yellow;
+	margin-bottom: 40vh;
+	.b-polis {
+		position: relative;
+		&__img-polis {
+			position: absolute;
+			margin-left: -340px;
+			margin-top: 34px;
+		}
+		&__img-gif {
+			position: absolute;
+			margin-left: 302px;
+			margin-top: 132px;
+			width: 100px;
+			height: 100px;
+			padding: 26px;
+			border-radius: 100%;
+			border: 4px solid $yellow;
+			background-color: $bg-white;
+			img {
+				width: 47px;
+				height: 46px;
+			}
+		}
+		&__text {
+			position: absolute;
+			margin-left: 264px;
+			margin-top: 51px;
+			width: 192px;
+			height: 58px;
+			color: $font-color;
+			font-size: 14px;
+			font-weight: 700;
+			line-height: 22px;
+			text-transform: uppercase;
+			letter-spacing: 1.12px;
+		}
+	}
+	.b-ipoteka {
+		padding-left: 69px;
+		padding-right: 0;
+		&__banner {
+			font-size: 26px;
+			font-weight: 700;
+			line-height: 26px;
+			text-transform: uppercase;
+			letter-spacing: 2.08px;
+			color: $yellow;
+			padding-top: 78px;
+			margin-bottom: 16px;
+		}
+		&__title {
+			color: #393838;
+			font-size: 34px;
+			font-weight: 800;
+			line-height: 54px;
+			text-transform: uppercase;
+			letter-spacing: 2.70px;
+			margin-bottom: 16px;
+		}
+		&__subtitle {
+			color: $font-color;
+			font-size: 18px;
+			font-weight: 400;
+			line-height: 30px;
+			font-weight: 600;
+			letter-spacing: 0.72px;
+			font-weight: 600;
+			letter-spacing: 0.72px;
+			margin-bottom: 0px;
+		}
+		.profit {
+			margin-top: 42px;
+		}
+		.profit__item {
+			margin-left: 17px;
+			padding-bottom: 40px;
+			flex: 0 0 40%;
+			.profit__text {
+				color: $font-color;
+				font-size: 18px;
+				font-weight: 600;
+				p {
+					letter-spacing: 0.52px;
+					line-height: 25px;	
+				}
+			}
+		}
+		.profit__btn {
+			margin-top: 19px;
+			margin-left: 35px;
+			.cta-btn {
+				width: 249px;
+			}
+		}
+	}
+	.b-partners {
+		margin-top: 48px;
+		&__title {
+			text-align: center;
+			overflow: hidden;
+			span {
+				position: relative;
+				color: $font-color;
+				font-size: 13px;
+				font-weight: 700;
+				line-height: 26px;
+				text-transform: uppercase;
+				letter-spacing: 1.17px;
+				background-color: #fff;
+				&:before, &:after {
+					content: "";
+					border-top: 8px solid $border-color; 
+					position: absolute;
+					top: 7px;
+					width: 100%;
+					right: 100%;
+					margin-right: 20px;
+					background-color:  $border-color;
+				}
+				&:after {
+					left: 100%;
+					margin-left: 20px;
+				}
+			}
+		}
+	}
+	.partners {
+		border-bottom:  8px solid $border-color;
+		border-left:  8px solid $border-color;
+		border-right:  8px solid $border-color;
+		background-color: $bg-white;
+		margin-top: -6px;
+		z-index: 1;
+		padding: 24px 28px 00px 30px;
+		.partner {
+			display: inline;
+			flex:  1 0 25%;
+			min-height: 94px;
+			margin-bottom: 26px;
+		}
+	}
+} // конец секции ипотека

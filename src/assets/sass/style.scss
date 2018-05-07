@@ -971,9 +971,6 @@ a {
 				input[type="checkbox"] {
 					width: 14px;
 					height: 14px;
-					// padding-right: 30px;
-					// border: 1px solid $bg-white;
-					// border-radius: 14px;
 				}
 				label { 
 					opacity: 0.3;
@@ -1029,11 +1026,76 @@ a {
 	}
 } // end s-forma
 
-// Section forma
-.s-map {
-	// background: url("../img/bg-3.png")  no-repeat center;
-	min-height: 578px;
+// Section s-adress
+.s-address {
+	background: url("../img/map_and_marker.png")  no-repeat center 38%;
+	min-height: 491px;
+	padding-top: 90px;
+	padding-bottom: 66px;
 	border-bottom: 2px solid $yellow;
 	margin-bottom: 100vh;
-
-	} //end s-map
+	.b-address {
+		height: 335px;
+		width: 386px;
+		border: 8px solid $border-color;
+		background-color: $bg-white;
+		color: #232525;
+		padding: 20px 24px;
+		&__title {
+			font-size: 26px;
+			font-weight: 800;
+			line-height: 54px;
+			text-transform: uppercase;
+			letter-spacing: 2.08px;
+		}
+		&__call {
+			margin-bottom: 26px;
+			.cta {
+				font-size: 14px;
+				font-weight: 600;
+				line-height: 45px;
+				text-transform: uppercase;
+				letter-spacing: 2.1px;
+			}
+			.tel {
+				color: $font-color;
+				font-size: 24px;
+				font-weight: 700;
+				line-height: 23px;
+				text-transform: uppercase;
+				letter-spacing: 1.44px;
+			}
+		}
+		&__address {
+			margin-bottom: 40px;
+			.cta {
+				font-size: 14px;
+				font-weight: 600;
+				line-height: 54px;
+				text-transform: uppercase;
+				letter-spacing: 1.68px;
+			}
+			.street {
+				color: $font-color;
+				font-size: 14px;
+				font-weight: 400;
+				line-height: 14px;
+				letter-spacing: 0.56px;
+			}
+		}
+		&__privacy {
+			a {
+				opacity: 0.5;
+				color: $font-color;
+				font-size: 12px;
+				font-weight: 400;
+				line-height: 25px;
+				letter-spacing: 0.48px;
+				text-decoration: none;
+					&:hover {
+						border-bottom: 1px solid transparent;
+					}
+			}
+		}
+	}//end b-address
+} //end s-address

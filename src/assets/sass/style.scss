@@ -49,7 +49,7 @@ html {
 body {
 	font-family: Akrobat;
 	color: $white;
-	min-height: 1050vh;
+	// min-height: 1050vh;
 	overflow-x: hidden;
 }
 
@@ -1032,8 +1032,6 @@ a {
 	min-height: 491px;
 	padding-top: 90px;
 	padding-bottom: 66px;
-	border-bottom: 2px solid $yellow;
-	margin-bottom: 100vh;
 	.b-address {
 		height: 335px;
 		width: 386px;
@@ -1099,3 +1097,23 @@ a {
 		}
 	}//end b-address
 } //end s-address
+
+// Section footer
+.s-footer {
+	background-color: $bg-white;
+	height: 127px;
+	border-top: 3px solid $border-color;
+	// box-shadow: 0 1px 5px 3px $border-color inset;
+	
+	// background-color: #555;
+	.font-color {
+		color: $font-color;
+	}
+	.top-line {
+		padding-bottom: 10px;
+		padding-top: 28px;
+		.manager {
+			margin-top: 10px;
+		}
+	}
+}

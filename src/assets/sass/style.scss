@@ -563,6 +563,18 @@ input[type="checkbox"] { display: none; }
 			border: 2px solid $yellow;
 		}
 	}
+
+	label[for^=infrastructure] {
+		border: 2px solid transparent;
+		flex: 0 0 33.3%; 
+		&:active, &:focus {
+			background-color: transparent;
+			.with-pic:before {
+				content: url(../img/icons/sircle-with-yellow-bullit.svg);
+			}
+		}
+	}
+
 }
 
 

@@ -557,9 +557,7 @@ input[type="checkbox"] { display: none; }
 		text-transform: uppercase;
 		letter-spacing: 1.4px;
 		margin-bottom: 0;
-		display: inline;
-		// padding-top: 0;
-		// padding-bottom: 0;
+		display: inline; 
 		&:hover, &:active {
 			background-color: $yellow;
 			border: 2px solid $yellow;

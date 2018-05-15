@@ -249,6 +249,7 @@ input[type="checkbox"] { display: none; }
 	padding: 23px 36px 23px 76px;
 	position: relative;
 	transition: left 1s ease;	
+	outline-color: transparent;
 	&__text {
 		font-size: 16px;
 		color: #1e1e1e;
@@ -732,6 +733,57 @@ input[type="checkbox"] { display: none; }
 
 } //end quizz-buttons
 
+.quizz-forma {
+	background-color: $bg-white;
+	border: 5px solid $border-color;
+	min-height: 550px;
+	padding: 36px 36px 51px 48px;
+	color: #000;
+} // end quizz-forma
+
+.b-forma.white-forma {
+	.b-forma__title, .b-forma__text,  {
+		color: $font-bold-color;
+	}
+	form.callback {
+		.formhead {
+			color: $font-bold-color;
+		}
+		input[type="tel"].icon {
+			border: 2px solid $border-color;
+			background: url(../img/icons/call-ico-black.svg) no-repeat 12% 50%;
+			background-size: 20px 20px;
+			outline-color: transparent;
+			transition: all 0.5s ease;  
+			&::placeholder {
+				color: $font-bold-color;
+			}
+			&:hover {
+				border: 2px solid $yellow;
+				transition: all 0.5s ease;  
+			}
+		}
+	  input[type="checkbox"] {
+	  	+ label a{
+	  		color: $privacy-label-color;
+	  		opacity: 0.7;
+	  	}
+	  	&:checked {
+	  		+ label:after {
+	  			color:  $privacy-label-color;
+	  			opacity: 0.7;
+	  		}
+	  	}
+	  	+ label:before {
+	  		border: 1px solid $privacy-label-color;
+	  		width: 14px;
+   			height: 14px;
+    		border-radius: 8px;
+	  	}
+	 	} // input[type="checkbox"] 
+	}
+}
+
 // Section details 
 .s-details {
 	margin-top: 72px;
@@ -1136,11 +1188,11 @@ input[type="checkbox"] { display: none; }
 .s-forma {
 	background: url("../img/bg-3.png")  no-repeat center;
 	min-height: 578px;
+} // end s-forma
 
-	.b-forma {
+.b-forma {
 		padding-top: 65px;
 		&__title {
-			// margin-top: -10px;
 			color: $bg-white;
 			font-size: 34px;
 			font-weight: 800;
@@ -1197,6 +1249,7 @@ input[type="checkbox"] { display: none; }
 			input[type="tel"].icon {
 				background: url(../img/icons/call-ico-white.svg) no-repeat 12% 50%;
 				background-size: 20px 20px;
+				outline-color: transparent;
 			}
 			input[type="checkbox"] {
 				position: absolute;
@@ -1288,18 +1341,18 @@ input[type="checkbox"] { display: none; }
 
 			} // .privacy
 		}
-	} // end b-forma
+} // end b-forma
 
-	.b-buklet {
-		position: relative;
-		&__img {
-			position: absolute;
-			margin-left: -54px;
-			margin-top: -204px;
-		  // box-shadow: -12px 13px 24px -5px #c0c0c0;
-		} // end-buklet
-	}
-} // end s-forma
+.b-buklet {
+	position: relative;
+	&__img {
+		position: absolute;
+		margin-left: -54px;
+		margin-top: -204px;
+	} // end-buklet
+}
+
+
 
 // Section s-adress
 .s-address {

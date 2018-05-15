@@ -480,7 +480,7 @@ input[type="checkbox"] { display: none; }
 	padding: 36px 36px 51px 48px;
 	&-group {
 		min-height: 250px;
-		padding-top: 50px;
+		padding-top: 45px;
 		padding-bottom: 34px;
 		border-top: 1px solid $border-color;
 		border-bottom: 1px solid $border-color;
@@ -646,7 +646,7 @@ input[type="checkbox"] { display: none; }
 
 	.group-rooms__second-row {
 		label[for^=rooms] {
-			border: 0px solid transparent;
+			border: 2px solid transparent;
 			flex: 0 0 50%; 
 			width: auto;
 			padding-left: 0;
@@ -667,11 +667,12 @@ input[type="checkbox"] { display: none; }
 	} // group-rooms__second-row
 
 	.group-decoration__first-row {
-		min-height: 200px; 
-		// min-height: auto;
+		// min-height: 200px; 
+		height: auto;
 		width: 100%;
+		overflow: hidden;
 		label[for^=decoration] {
-			border: 0px solid transparent;
+			border: 2px solid transparent;
 			display: block;
 			width: auto;
 			padding-left: 0;
@@ -692,13 +693,44 @@ input[type="checkbox"] { display: none; }
 		} // label[for^=rooms]
 	} // group-decoration__first-row
 
+	.group-purchase_title {
+		margin-top: 40px;
+		margin-bottom: 0px;
+		margin-left: 2px;
+		span {
+			color: $font-bold-color;
+			font-size: 18px;
+			font-weight: 700;
+			line-height: 36px;
+			text-transform: uppercase;
+			letter-spacing: 1.44px;
+			margin-top: 70px;
+			margin-bottom: 50px;
+		}
+	}
+	.group-purchase {
+		label[for^=purchase] {
+			border: 2px solid transparent;
+			flex: 0 0 50%; 
+			width: auto;
+			padding-left: 0;
+			padding-right: 50px;
+			.with-pic {
+				padding-left: 0;
+			}
+			&:active, &:focus {
+				background-color: transparent;
+				.with-pic {
+					padding-left: 0;
+					&:before {
+						content: url(../img/icons/sircle-with-yellow-bullit.svg);
+					}
+				}
+			}
+		} // label[for^=purchase]
+	} // groups-purchase
 
-	
-
-} //end 
-
-
-
+} //end quizz-buttons
 
 // Section details 
 .s-details {

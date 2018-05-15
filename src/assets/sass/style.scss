@@ -475,11 +475,12 @@ input[type="checkbox"] { display: none; }
 	// flex: 0 1 100%;
 	border: 5px solid $border-color;
 	min-height: 550px;
+	width: 100%;
 	background-color: #ffffff;
 	padding: 36px 36px 51px 48px;
 	&-group {
 		min-height: 250px;
-		padding-top: 20px;
+		padding-top: 50px;
 		padding-bottom: 34px;
 		border-top: 1px solid $border-color;
 		border-bottom: 1px solid $border-color;
@@ -573,9 +574,128 @@ input[type="checkbox"] { display: none; }
 				content: url(../img/icons/sircle-with-yellow-bullit.svg);
 			}
 		}
+	} // label[for^=infrastructure]
+
+	.group-rooms {
+		flex: 0 1 50%;
+		border-right: 2px solid $border-color;
+	}
+	.group-decoration {
+		flex: 0 1 45%;
 	}
 
-}
+	.groups-rooms_title, .groups-decoration_title {
+		display: flex;
+		justify-content: start;
+		align-items: center;
+		color: $font-bold-color;
+		font-size: 18px;
+		font-weight: 700;
+		line-height: 18px;
+		text-transform: uppercase;
+		letter-spacing: 1.44px;
+		padding-left: 0px;
+		margin-bottom: 30px;
+		img {
+			width: 49px;
+			height: 36px;
+			padding-right: 22px;
+		}
+	}
+	
+	.group-rooms__first-row {
+		display: flex;
+		justify-content: between;
+		height: 90px;
+		margin-bottom: 20px;
+		label[for^=rooms] {
+			width: 50px;
+			height: 50px;
+			margin-right: 45px;
+			margin-bottom: 0px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border: 2px solid $border-color;
+			border-radius: 0;
+			flex: 0 1 auto; 
+			&:hover {
+				border: 2px solid $yellow;
+			}
+			&:active, &:focus {
+				background-color: $yellow;
+				border: 2px solid $yellow;
+			}
+			span {
+				color: $font-bold-color;
+				font-size: 30px;
+				font-weight: 800;
+				line-height: 1;
+				text-transform: uppercase;
+				letter-spacing: 2.56px;
+			}
+			.with-pic {
+				padding: 0px;
+			}
+			.with-pic:before {
+					content: '';
+					padding: 0px;
+			}
+		}
+	} // group-rooms__first-row
+
+	.group-rooms__second-row {
+		label[for^=rooms] {
+			border: 0px solid transparent;
+			flex: 0 0 50%; 
+			width: auto;
+			padding-left: 0;
+			padding-right: 50px;
+			.with-pic {
+				padding-left: 0;
+			}
+			&:active, &:focus {
+				background-color: transparent;
+				.with-pic {
+					padding-left: 0;
+					&:before {
+						content: url(../img/icons/sircle-with-yellow-bullit.svg);
+					}
+				}
+			}
+		} // label[for^=rooms]
+	} // group-rooms__second-row
+
+	.group-decoration__first-row {
+		min-height: 200px;
+		// min-height: auto;
+		width: 100%;
+		label[for^=decoration] {
+			border: 0px solid transparent;
+			display: block;
+			width: auto;
+			padding-left: 0;
+			padding-top: 0;
+			margin-bottom: 10px;
+			.with-pic {
+				padding-left: 0;
+			}
+			&:active, &:focus {
+				background-color: transparent;
+				.with-pic {
+					// padding-left: 0;
+					&:before {
+						content: url(../img/icons/sircle-with-yellow-bullit.svg);
+					}
+				}
+			}
+		} // label[for^=rooms]
+	} // group-decoration__first-row
+
+
+	
+
+} //end 
 
 
 

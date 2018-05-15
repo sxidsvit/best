@@ -419,59 +419,86 @@
       <div class="quizz-buttons">
         <h3 class="quizz-title text-uppercase text-left">какой тип квартиры вы расматриваете?</h3>
         <div class="quizz-subtitle">Можно выбрать несколько пунктов</div>
-        <div class="quizz-buttons-group d-flex justify-content-between flex-wrap align-items-center">
 
-          <!-- первый ряд кнопок -->
-          <label for="infrastructure-1" class="answer-text simple">
-            <span class="with-pic">ТОРГОВЫЙ ЦЕНТР</span>
-            <input form="form"  type="checkbox" name="infrastructure" id="infrastructure-1" class="answer living-place" value="ТОРГОВЫЙ ЦЕНТР" />
-          </label>           
+        <div class="quizz-buttons-group d-flex justify-content-between flex-wrap align-items-start">
 
-          <label for="infrastructure-2" class="answer-text simple">
-            <span class="with-pic">парк</span>
-            <input form="form"  type="checkbox" name="infrastructure" id="infrastructure-2" class="answer living-place" value="парк<" />
-          </label>   
+          <div class="group-rooms">
+            <div class="groups-rooms_title">
+              <img src="assets/img/icons/sketch-ico.svg" alt="Иконка набросок">
+              <span>Количество комнат?</span>      
+            </div>
 
-          <label for="infrastructure-3" class="answer-text simple ">
-            <span class="with-pic">школа</span>
-            <input form="form"  type="checkbox" name="infrastructure" id="infrastructure-3" class="answer living-place" value="школа" />
-          </label>   
+            <div class="group-rooms__first-row ">
+              <!-- ряд кнопок rooms -->
+              <label for="rooms-1" class="answer-text rooms">
+                <span class="with-pic">1</span>
+                <input form="form"  type="checkbox" name="rooms" id="rooms-1" class="answer living-place" value="1" />
+              </label>           
 
-          <label for="infrastructure-4" class="answer-text simple">
-            <span class="with-pic">супермаркет</span>
-            <input form="form"  type="checkbox" name="infrastructure" id="infrastructure-4" class="answer living-place" value="супермаркет" />
-          </label>                           
-          <!-- конец первого ряда кнопок -->
-          <!-- второй ряд кнопок -->
-          <label for="infrastructure-5" class="answer-text simple">
-            <span class="with-pic">фитнес-центр</span>
-            <input form="form"  type="checkbox" name="infrastructure" id="infrastructure-5" class="answer living-place" value="фитнес-центр" />
-          </label>           
+              <label for="rooms-2" class="answer-text rooms">
+                <span class="with-pic">2</span>
+                <input form="form"  type="checkbox" name="rooms" id="rooms-2" class="answer living-place" value="2" />
+              </label>   
 
-          <label for="infrastructure-6" class="answer-text simple">
-            <span class="with-pic">детский сад</span>
-            <input form="form"  type="checkbox" name="infrastructure" id="infrastructure-6" class="answer living-place" value="детский сад" />
-          </label>   
+              <label for="rooms-3" class="answer-text rooms ">
+                <span class="with-pic">3</span>
+                <input form="form"  type="checkbox" name="rooms" id="rooms-3" class="answer living-place" value="3" />
+              </label>   
 
-          <label for="infrastructure-7" class="answer-text simple">
-            <span class="with-pic">салоны красоты</span>
-            <input form="form"  type="checkbox" name="infrastructure" id="infrastructure-7" class="answer living-place" value="салоны красоты" />
-          </label>   
+              <label for="rooms-4" class="answer-text rooms">
+                <span class="with-pic">4</span>
+                <input form="form"  type="checkbox" name="rooms" id="rooms-4" class="answer living-place" value="4" />
+              </label>                           
 
-          <label for="infrastructure-8" class="answer-text simple">
-            <span class="with-pic">водоем</span>
-            <input form="form"  type="checkbox" name="infrastructure" id="infrastructure-8" class="answer living-place" value="водоем" />
-          </label>          
-          <!-- конец второго ряда кнопок -->
-          <!-- третий ряд кнопок -->
-          <label for="infrastructure-9" class="answer-text simple">
-            <span class="with-pic">вуз</span>
-            <input form="form"  type="checkbox" name="infrastructure" id="infrastructure-9" class="answer living-place" value="вуз" />
-          </label>           
+              <label for="rooms-5" class="answer-text rooms">
+                <span class="with-pic">5+</span>
+                <input form="form"  type="checkbox" name="rooms" id="rooms-5" class="answer living-place" value="5+" />
+              </label>           
+              <!-- конец первого ряда кнопок rooms -->
+            </div>     <!-- end group-rooms__first-row -->
 
-          <!-- конец третьего ряда кнопок -->
-        </div> <!-- конец quizz-buttons-group -->
+            <!-- второй ряд кнопок rooms -->
+            <div class="group-rooms__second-row">
+              <label for="rooms-6" class="answer-text rooms">
+                <span class="with-pic">студии</span>
+                <input form="form"  type="checkbox" name="rooms" id="rooms-6" class="answer living-place" value="студии" />
+              </label>           
 
+              <label for="rooms-7" class="answer-text rooms">
+                <span class="with-pic">Свободная планировка</span>
+                <input form="form"  type="checkbox" name="rooms" id="rooms-7" class="answer living-place" value="Свободная планировка<" />
+              </label>   
+            </div>     <!-- end group-rooms__second row -->
+          </div>     <!-- end group rooms -->
+
+          <div class="group-decoration">
+            <div class="groups-decoration_title">
+              <img src="assets/img/icons/wallpaper-ico.svg" alt="Иконка набросок">
+              <span>Наличие отделки?</span>               
+            </div>
+
+            <div class="group-decoration__first-row">
+              <!-- столбик  кнопок rooms -->
+              <label for="decoration-1" class="answer-text decoration">
+                <span class="with-pic">черновая</span>
+                <input form="form"  type="checkbox" name="decoration" id="decoration-1" class="answer living-place" value="черновая" />
+              </label>           
+
+              <label for="decoration-2" class="answer-text decoration">
+                <span class="with-pic">чистовая</span>
+                <input form="form"  type="checkbox" name="decoration" id="decoration-2" class="answer living-place" value="чистовая<" />
+              </label>   
+
+              <label for="decoration-3" class="answer-text decoration">
+                <span class="with-pic">под ключ</span>
+                <input form="form"  type="checkbox" name="decoration" id="decoration-3" class="answer living-place" value="под ключ" />
+              </label>   
+
+              <!-- конец столбика кнопок decoration -->
+            </div>     <!-- end group-decoration -->
+
+          </div>     <!-- end group-decoration -->
+        </div>      <!-- конец quizz-buttons -->
         <div class="quizz-nav d-flex justify-content-between">
           <div class="quizz-nav__step">
             <span>ВЫ ОТВЕТИЛИ НА: 4/6</span>
@@ -496,9 +523,6 @@
         </div>     <!-- end quizz-nav -->
       </div>      <!-- конец quizz-buttons -->
     </div> <!-- end quizz question question-4 rooms -->  
-
-
-
 
 
   </div> <!-- end container -->
@@ -688,7 +712,7 @@
         <p class="b-ipoteka__subtitle">
           Одобрение ипотеки за 48 часов в 9 из 10 случаев, 10 случай <br>как правило занимает чуть больше времени
         </p>
-        
+
         <div class="profit d-flex  justify-content-start">
           <div class="profit__item  d-flex">
             <img class="profit__img" src="assets/img/icons/square.svg" alt="list mark">

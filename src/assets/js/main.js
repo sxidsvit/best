@@ -11,3 +11,6 @@
 //= custom/fontawesome-all.js
 //= custom/tooltip.js
 //= custom/popover.js
+
+//= custom/custom.js
+ 

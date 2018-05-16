@@ -53,6 +53,133 @@ body {
 	overflow-x: hidden;
 }
 
+// Preloader 
+.preloader {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+}
+
+.preloader-content {
+	width: 80px;
+	height: 80px;
+  border: 6px solid #08bef2;
+  border-top: 6px solid $yellow;
+  border-bottom: 6px solid $yellow;
+  border-radius: 60%;
+  animation: spin 1s infinite linear;
+}
+@keyframes spin {
+    from{
+        transform: rotate(0deg);
+    }to{
+        transform: rotate(360deg);
+    }
+ }
+// end preloader
+
+// lbox
+.lbox {
+	position: fixed;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  height: 100vh;
+  z-index: 100;
+  // display: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  opacity: 0.98;
+  transition: opacity 1000ms cubic-bezier(.455, .03, .515, .955);
+  .lbox-forma-wrapper {
+  	display: block;
+    width: 30%;
+    min-width: 500px;
+    margin-right: auto;
+    margin-left: auto;
+    .b-forma.lbox-forma.white-forma {
+			width: 500px;
+			height: 530px;
+			box-shadow: 0 0 45px 6px rgba(240, 203, 56, 0.13);
+			border: 10px solid $yellow;
+			background-color: $bg-white;
+			padding: 60px 40px 50px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: between;
+			position: relative;
+			.close-button {
+				position: absolute;
+				right: 15px;
+				top: 15px;
+				span {
+					font-size: 80px;
+					line-height: 20px;
+					font-weight: 500;
+					color: $font-color;
+					opacity: 0.15;
+					transform-origin: center center;
+					transform: rotate(-45deg);
+					display: block;
+					transitio: opacity 0.7s;
+					&:hover {
+						opacity: 0.4;
+						transitio: opacity 0.7s;
+						cursor: pointer;
+					}
+				}
+			} // .close-button
+
+			.b-forma__title {
+				font-size: 36px;
+				font-weight: 800;
+				line-height: 26px;
+				text-align: center;
+				max-width: 100%;
+				margin-bottom: 35px;
+			}
+			.b-forma__text {
+				text-align: center;
+				max-width: 100%;
+				font-size: 17px;
+				font-weight: 400;
+				line-height: 26px;
+			}
+			form.callback {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: between;
+				margin-top: 50px;
+				.formhead {
+					text-align: center;
+					padding-left: 0;
+					margin-bottom: 12px;
+				}
+				input[type="tel"].icon {
+					margin-right: 0px;
+					margin-top: 0;
+					margin-bottom: 45px;
+				}
+				
+
+			} // forma.callback
+    } // .b-forma.lbox-forma.white-forma 
+  } //.lbox-forma-wrapper
+} // end lbox
+
+
 р {
 	font-weight: 400;
 	font-size: 5rem;

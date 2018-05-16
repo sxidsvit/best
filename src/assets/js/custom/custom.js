@@ -1,0 +1,1 @@
+ $(document).ready(function() { $('.preloader').delay(500).fadeOut('slow'); })

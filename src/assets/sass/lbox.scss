@@ -1,4 +1,6 @@
 .lbox {
+  // display: none;
+  display: flex;
 	position: fixed;
   left: 0px;
   top: 0px;
@@ -6,9 +8,6 @@
   bottom: 0px;
   height: 100vh;
   z-index: 100;
-  // display: none;
-  display: flex;
-  display: none;
   justify-content: center;
   align-items: center;
   background-color: #000;
@@ -93,8 +92,8 @@
   } //.lbox-forma-wrapper
 
 	.lbox2-forma-wrapper {
-		display: block;
 		// display: none;
+		display: block;
     width: 80%;
     min-width: 500px;
     margin-right: auto;
@@ -142,11 +141,6 @@
 			form  {
 				button {
 					z-index: 1;
-				}
-				input[type="checkbox"] {
-					&:checked(not) {
-
-					}
 				}
 				label {
 					opacity: 0.3;

@@ -1,0 +1,168 @@
+.lbox {
+	position: fixed;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  height: 100vh;
+  z-index: 100;
+  // display: none;
+  display: flex;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  opacity: 0.98;
+  transition: opacity 1000ms cubic-bezier(.455, .03, .515, .955);
+  .lbox-forma-wrapper {
+  	// display: block;
+  	display: none;
+    width: 30%;
+    min-width: 500px;
+    margin-right: auto;
+    margin-left: auto;
+    .b-forma.lbox-forma.white-forma {
+			width: 500px;
+			height: 530px;
+			box-shadow: 0 0 45px 6px rgba(240, 203, 56, 0.13);
+			border: 10px solid $yellow;
+			background-color: $bg-white;
+			padding: 60px 40px 50px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: between;
+			position: relative;
+			.close-button {
+				position: absolute;
+				right: 15px;
+				top: 15px;
+				span {
+					font-size: 80px;
+					line-height: 20px;
+					font-weight: 500;
+					color: $font-color;
+					opacity: 0.15;
+					transform-origin: center center;
+					transform: rotate(-45deg);
+					display: block;
+					transitio: opacity 0.7s;
+					&:hover {
+						opacity: 0.4;
+						transitio: opacity 0.7s;
+						cursor: pointer;
+					}
+				}
+			} // .close-button
+
+			.b-forma__title {
+				font-size: 36px;
+				font-weight: 800;
+				line-height: 26px;
+				text-align: center;
+				max-width: 100%;
+				margin-bottom: 35px;
+			}
+			.b-forma__text {
+				text-align: center;
+				max-width: 100%;
+				font-size: 17px;
+				font-weight: 400;
+				line-height: 26px;
+			}
+			form.callback {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: between;
+				margin-top: 50px;
+				.formhead {
+					text-align: center;
+					padding-left: 0;
+					margin-bottom: 12px;
+				}
+				input[type="tel"].icon {
+					margin-right: 0px;
+					margin-top: 0;
+					margin-bottom: 45px;
+				}
+				
+
+			} // forma.callback
+    } // .b-forma.lbox-forma.white-forma 
+  } //.lbox-forma-wrapper
+
+	.lbox2-forma-wrapper {
+		display: block;
+		// display: none;
+    width: 80%;
+    min-width: 500px;
+    margin-right: auto;
+    margin-left: auto;
+    .container-lbox2 {
+    	background: url("../img/bg-lbox.png")  no-repeat 20%;
+    	padding: 20px 20px;
+    	border: 10px solid $yellow;
+    	background-size: cover;
+    	position: relative;
+    	.close-button {
+				position: absolute;
+				width: 50px;
+				height: 50px;
+				left: 5px;
+				top: 5px;
+				span {
+					font-size: 80px;
+					line-height: 50px;
+					font-weight: 500;
+					color: $bg-white;
+					opacity: 0.3;
+					transform-origin: center center;
+					transform: rotate(-135deg);
+					transition: opacity 0.7s;
+					display: block;
+					&:hover {
+						opacity: 0.8;
+						transitio: opacity 0.7s;
+						cursor: pointer;
+				}
+				}
+			} // .close-button
+    	.b-forma__title {
+    		width: 100%;
+				height: 95px;
+    		font-size: 26px;
+				color: $bg-white;
+				line-height: 36px;
+				letter-spacing: 2.08px;
+    	}
+    	.b-forma__text {
+    		font-size: 16px;
+    	}
+			form  {
+				button {
+					z-index: 1;
+				}
+				input[type="checkbox"] {
+					&:checked(not) {
+
+					}
+				}
+				label {
+					opacity: 0.3;
+					color: $bg-white;
+					font-size: 12px;
+					font-weight: 400;
+					line-height: 25px;
+					letter-spacing: 0.48px;
+				}
+			}
+			.b-buklet__img {
+				margin-top: -100px;
+				margin-left: -170px;
+				height: 640px;
+				width: auto;
+			} // .b-buklet__img
+    } //.container-lbox2 
+	} // .lbox2-forma-wrapper
+} // end lbox

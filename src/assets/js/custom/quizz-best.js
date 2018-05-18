@@ -70,9 +70,10 @@ var yellow = '#f0cb38',
 		
 function changeState(clicked) {
 
-  clicked.parent().parent().parent().find( '.step-forward'  ).removeClass( 'notactive' );
+  // -- unblock the buttons with class step-worfard
+  clicked.parent().parent().parent().parent().parent().find( '.step-forward'  ).removeClass( 'notactive' );
 
-  // -- change the color of the boarder. Manipulate with  radio button --
+  // -- manipulation with  state of radio buttons
 
   var displayAttr = clicked.find('input:checkbox').prop( 'checked');
   // console.log('displayAttr до клика : ' + displayAttr);
@@ -139,9 +140,37 @@ function resultsCollecting() {
   if (count == 0) {infrastructure += ""}
   // ----------------------------------------------------------------
 
+  var boxes = $(' input[type="checkbox"].rooms:checked '); 
+  var count = 0;
+  rooms = "КОЛИЧЕСТВО КОМНАТ? - ";
+  for (var i=0;  i<boxes.length; i++ )
+    {
+      if( $(boxes[i]).prop('checked')) {
+        rooms += $(boxes[i]).val() + '|';
+        count ++;
+      }
+     }
+  if (count == 0) {rooms += ""}
+  // ----------------------------------------------------------------
+
+  var boxes = $(' input[type="checkbox"].decoration:checked '); 
+  var count = 0;
+  decoration = "НАЛИЧИЕ ОТДЕЛКИ? - ";
+  for (var i=0;  i<boxes.length; i++ )
+    {
+      if( $(boxes[i]).prop('checked')) {
+        decoration += $(boxes[i]).val() + '|';
+        count ++;
+      }
+     }
+  if (count == 0) {decoration += ""}
+  // ----------------------------------------------------------------
+
   console.log( 'residential : ' + residential );
   console.log( 'district : ' + district );
   console.log( 'infrastructure : ' + infrastructure );
+  console.log( 'rooms : ' + rooms );
+  console.log( 'decoration : ' + decoration );
 }
 
 // Click ON THE LABEL ANSWER-TEXT

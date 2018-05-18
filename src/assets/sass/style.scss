@@ -705,8 +705,9 @@ input[type="checkbox"] { display: none; }
 			border: 2px solid transparent;
 			flex: 0 0 50%; 
 			width: auto;
-			padding-left: 0;
-			padding-right: 50px;
+			// padding-left: 0;
+			// padding-right: 50px;
+			margin-right: 30px;
 			.with-pic {
 				padding-left: 0;
 			}
@@ -724,15 +725,14 @@ input[type="checkbox"] { display: none; }
 
 	.group-decoration__first-row {
 		// min-height: 200px; 
-		height: auto;
+		min-height: 200px;
 		width: 100%;
-		overflow: hidden;
+		// overflow: hidden;
 		label[for^=decoration] {
 			border: 2px solid transparent;
 			display: block;
-			width: auto;
-			padding-left: 0;
-			padding-top: 0;
+			// width: auto;
+			max-width: 140px;
 			margin-bottom: 10px;
 			.with-pic {
 				padding-left: 0;

@@ -1,6 +1,6 @@
 .lbox {
-  // display: none;
-  display: flex;
+  display: none;
+  // display: flex;
 	position: fixed;
   left: 0px;
   top: 0px;
@@ -92,8 +92,8 @@
   } //.lbox-forma-wrapper
 
 	.lbox2-forma-wrapper {
-		// display: none;
-		display: block;
+		display: none;
+		// display: block;
     width: 80%;
     min-width: 500px;
     margin-right: auto;

@@ -12,5 +12,6 @@
 //= custom/tooltip.js
 //= custom/popover.js
 
+//= custom/quizz-best.js
 //= custom/custom.js
  

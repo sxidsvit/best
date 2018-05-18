@@ -749,6 +749,12 @@ input[type="checkbox"] { display: none; }
 		} // label[for^=rooms]
 	} // group-decoration__first-row
 
+	.group-budjet { 
+		label[for^=budjet] {
+			width: 230px;
+		}
+	}
+
 	.group-purchase_title {
 		margin-top: 40px;
 		margin-bottom: 0px;
@@ -769,8 +775,8 @@ input[type="checkbox"] { display: none; }
 			border: 2px solid transparent;
 			flex: 0 0 50%; 
 			width: auto;
-			padding-left: 0;
-			padding-right: 50px;
+			padding-right: 20px;
+			margin-right: 20px;
 			.with-pic {
 				padding-left: 0;
 			}

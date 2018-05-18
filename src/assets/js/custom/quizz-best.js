@@ -166,11 +166,39 @@ function resultsCollecting() {
   if (count == 0) {decoration += ""}
   // ----------------------------------------------------------------
 
+  var boxes = $(' input[type="checkbox"].budjet:checked '); 
+  var count = 0;
+  budjet = "БЮДЖЕТ НА ПОКУПКУ КВАРТИРЫ? - ";
+  for (var i=0;  i<boxes.length; i++ )
+    {
+      if( $(boxes[i]).prop('checked')) {
+        budjet += $(boxes[i]).val() + '|';
+        count ++;
+      }
+     }
+  if (count == 0) {budjet += ""}
+  // ----------------------------------------------------------------
+
+  var boxes = $(' input[type="checkbox"].purchase:checked '); 
+  var count = 0;
+  purchase = "СПОСОБ ПОКУПКИ? - ";
+  for (var i=0;  i<boxes.length; i++ )
+    {
+      if( $(boxes[i]).prop('checked')) {
+        purchase += $(boxes[i]).val() + '|';
+        count ++;
+      }
+     }
+  if (count == 0) {purchase += ""}
+  // ----------------------------------------------------------------
+
   console.log( 'residential : ' + residential );
   console.log( 'district : ' + district );
   console.log( 'infrastructure : ' + infrastructure );
   console.log( 'rooms : ' + rooms );
   console.log( 'decoration : ' + decoration );
+  console.log( 'budjet : ' + budjet );
+  console.log( 'purchase : ' + purchase );
 }
 
 // Click ON THE LABEL ANSWER-TEXT

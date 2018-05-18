@@ -146,7 +146,7 @@
   <div class="container pl-0 pr-0">
     <h2 class="s-quizz__title text-uppercase">посмотрите вариант, который подходит <br>именно вам!</h2>
 
-    <div class="question question-1 ">
+    <div class="question question-1 visible">
       <div class="quizz d-flex justify-content-between align-items-start">
         <div class="quizz-slides">
           <h3 class="quizz-title text-uppercase text-left">Выберите удобное для вас расположение</h3>
@@ -524,10 +524,10 @@
                   <input form="form"  type="checkbox" name="rooms" id="rooms-4" class="answer rooms" value="4" />
                 </label>          
 
-                 <label for="rooms-5" class="answer-text rooms">
+                <label for="rooms-5" class="answer-text rooms">
                   <span class="with-pic">5+</span>
                   <input form="form"  type="checkbox" name="rooms" id="rooms-5" class="answer rooms" value="5+" />
-                 </label>           
+                </label>           
                 <!-- конец первого ряда кнопок rooms -->
               </div>     <!-- end group-rooms__first-row -->
 
@@ -599,32 +599,32 @@
       </div> 
     </div> <!-- end quizz question question-4 rooms -->  
 
-    <div class="question question-5">
+    <div class="question question-5 visible">
       <div class="quizz budjet d-flex justify-content-between align-content-start align-items-start">
         <div class="quizz-buttons">
           <h3 class="quizz-title text-uppercase text-left">БЮДЖЕТ НА ПОКУПКУ КВАРТИРЫ?</h3>
           <!-- <div class="quizz-subtitle">Можно выбрать несколько пунктов</div> -->
 
-          <div class="quizz-buttons-group d-flex justify-content-between flex-wrap align-items-center">
+          <div class="quizz-buttons-group ">
 
-            <div class="group-budjet">
+            <div class="group-budjet d-flex justify-content-between">
               <label for="budjet-1" class="answer-text budjet">
                 <span class="with-pic">ОТ 3 МЛН. РУБ.</span>
-                <input form="form"  type="checkbox" name="budjet" id="budjet-1" class="answer living-place" value="ОТ 3 МЛН. РУБ." />
+                <input form="form"  type="checkbox" name="budjet" id="budjet-1" class="answer budjet" value="ОТ 3 МЛН. РУБ." />
               </label>           
               <label for="budjet-2" class="answer-text budjet">
                 <span class="with-pic">ОТ 5 МЛН. РУБ.</span>
-                <input form="form"  type="checkbox" name="budjet" id="budjet-2" class="answer living-place" value="ОТ 5 МЛН. РУБ." />
+                <input form="form"  type="checkbox" name="budjet" id="budjet-2" class="answer budjet" value="ОТ 5 МЛН. РУБ." />
               </label>   
 
               <label for="budjet-3" class="answer-text budjet">
                 <span class="with-pic">ОТ 6 МЛН. РУБ.</span>
-                <input form="form"  type="checkbox" name="budjet" id=budjet-3" class="answer living-place" value="ОТ 6 МЛН. РУБ." />
+                <input form="form"  type="checkbox" name="budjet" id=budjet-3" class="answer budjet" value="ОТ 6 МЛН. РУБ." />
               </label>   
 
               <label for="budjet-4" class="answer-text budjet">
                 <span class="with-pic">БОЛЕЕ 10 МЛН. РУБ.</span>
-                <input form="form"  type="checkbox" name="budjet" id="budjet-4" class="answer living-place" value="БОЛЕЕ 10 МЛН. РУБ." />
+                <input form="form"  type="checkbox" name="budjet" id="budjet-4" class="answer budjet" value="БОЛЕЕ 10 МЛН. РУБ." />
               </label>     
             </div>      <!-- конец group-budjet -->                    
 
@@ -634,17 +634,17 @@
               </div>
               <label for="purchase-1" class="answer-text purchase">
                 <span class="with-pic">СОБСТВЕННЫЕ СРЕДСТВА</span>
-                <input form="form"  type="checkbox" name="purchase" id="purchase-1" class="answer living-place" value="СОБСТВЕННЫЕ СРЕДСТВА" />
+                <input form="form"  type="checkbox" name="purchase" id="purchase-1" class="answer purchase" value="СОБСТВЕННЫЕ СРЕДСТВА" />
               </label>           
 
               <label for="purchase-2" class="answer-text purchase">
                 <span class="with-pic">ИПОТЕКА</span>
-                <input form="form"  type="checkbox" name="purchase" id="purchase-2" class="answer living-place" value="ИПОТЕКА" />
+                <input form="form"  type="checkbox" name="purchase" id="purchase-2" class="answer purchase" value="ИПОТЕКА" />
               </label>   
 
               <label for="purchase-3" class="answer-text purchase">
                 <span class="with-pic">РАССРОЧКА</span>
-                <input form="form"  type="checkbox" name="purchase" id="purchase-3" class="answer living-place" value="РАССРОЧКА" />
+                <input form="form"  type="checkbox" name="purchase" id="purchase-3" class="answer purchase" value="РАССРОЧКА" />
               </label>   
             </div>     <!-- конец group-purchase -->
           </div> <!-- конец quizz-buttons-group -->
@@ -661,8 +661,8 @@
             </div>
 
             <div class="quizz-nav__not-know">
-              <label for="district-13" class="answer-text simple not-know">пока не знаю
-                <input form="form"  type="checkbox" name="district" id="district-13" class="answer living-place" value="пока не знаю" />
+              <label for="budjet-5" class="answer-text simple not-know">пока не знаю
+                <input form="form"  type="checkbox" name="budjet" id="budjet-5" class="answer budjet" value="пока не знаю" />
               </label>   
             </div> 
 
@@ -676,7 +676,7 @@
       </div> 
     </div><!-- end quizz question question-5 budjet -->
 
-    <div class="question question-6">
+    <div class="question question-6 visible">
       <div class="quizz d-flex justify-content-between align-items-stretch">
 
         <div class="col-8 quizz-forma">

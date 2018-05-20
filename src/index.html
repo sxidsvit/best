@@ -155,12 +155,12 @@
               <div class="quizz-slide__bg-img d-flex justify-content-between">
                 <div class="quizz-slide__bg-img--piс1 ">
                   <div class="quizz-slide__overlay d-flex justify-content-center align-items-center">
-                    <div class="slide-btn btn btn-outline-light " data-location="Москва"><span>Москва</span></div>
+                    <div class="slide-btn location btn btn-outline-light " data-area="Москва"><span>Москва</span></div>
                   </div>
                 </div>
                 <div class="quizz-slide__bg-img--piс2 ">
                   <div class="quizz-slide__overlay d-flex justify-content-center align-items-center">
-                    <div class="slide-btn btn btn-outline-light " data-location="область"><span>Область</span></div>
+                    <div class="slide-btn location btn btn-outline-light "  data-area="область"><span>Область</span></div>
                   </div>
                 </div>
               </div> <!-- конец блока слайдов -->
@@ -179,7 +179,7 @@
             </div>
 
             <div class="quizz-nav__pagi">
-              <a href="#" class="pagi step-forward notactive ">следующий шаг</a> &gt;
+              <a href="#" class="pagi step-forward notactive " data-notactive = "true" >следующий шаг</a> &gt;
             </div>
 
           </div>     <!-- end quizz-nav -->
@@ -204,7 +204,7 @@
       </div> 
     </div> <!-- end quizz question question-1 -->
 
-    <div class="question question-2 visible">
+    <div class="question question-2a ">
       <div class="quizz residential  d-flex justify-content-between align-content-start align-items-start">
         <div class="quizz-buttons">
           <h3 class="quizz-title text-uppercase text-left">КАКОЕ РАСПОЛОЖЕНИЕ ЖИЛОГО КОМПЛЕКСА РАССМАТРИВАЕТЕ?</h3>
@@ -296,15 +296,15 @@
 
             <div class="quizz-nav__pagi">
               &lt; <a href="#" class="pagi step-back">предыдущий шаг</a> &emsp; &emsp; 
-              <a href="#" class="pagi step-forward notactive ">следующий шаг</a> &gt;
+              <a href="#" class="pagi step-forward notactive " data-notactive = "true">следующий шаг</a> &gt;
             </div>
 
           </div>     <!-- end quizz-nav -->
         </div>      <!-- конец quizz-buttons -->
-      </div> 
+      </div>  
     </div> <!-- end quizz question question-2 -->
 
-    <div class="question question-2 visible">
+    <div class="question question-2b ">
       <div class="quizz district d-flex justify-content-between align-content-start align-items-start">
         <div class="quizz-buttons">
           <h3 class="quizz-title text-uppercase text-left">КАКОЕ РАСПОЛОЖЕНИЕ ЖИЛОГО КОМПЛЕКСА РАССМАТРИВАЕТЕ?</h3>
@@ -395,7 +395,7 @@
 
             <div class="quizz-nav__pagi">
               &lt; <a href="#" class="pagi step-back">предыдущий шаг</a> &emsp; &emsp; 
-              <a href="#" class="pagi step-forward notactive ">следующий шаг</a> &gt;
+              <a href="#" class="pagi step-forward notactive " data-notactive = "true">следующий шаг</a> &gt;
             </div>           
 
           </div>     <!-- end quizz-nav -->
@@ -403,7 +403,7 @@
       </div> 
     </div> <!-- end quizz question question-2 -->
 
-    <div class="question question-3 visible">
+    <div class="question question-3 ">
       <div class="quizz  infrastructure d-flex justify-content-between align-content-start align-items-start">
         <div class="quizz-buttons">
           <h3 class="quizz-title text-uppercase text-left">Что должно быть по близости?</h3>
@@ -418,7 +418,7 @@
 
             <label for="infrastructure-2" class="answer-text infrastructure">
               <span class="with-pic">парк</span>
-              <input form="form"  type="checkbox" name="infrastructure" id="infrastructure-2" class="answer infrastructure" value="парк<" />
+              <input form="form"  type="checkbox" name="infrastructure" id="infrastructure-2" class="answer infrastructure" value="парк" />
             </label>   
 
             <label for="infrastructure-3" class="answer-text infrastructure ">
@@ -480,7 +480,7 @@
 
             <div class="quizz-nav__pagi">
               &lt; <a href="#" class="pagi step-back">предыдущий шаг</a> &emsp; &emsp; 
-              <a href="#" class="pagi step-forward notactive ">следующий шаг</a> &gt;
+              <a href="#" class="pagi step-forward notactive " data-notactive = "true">следующий шаг</a> &gt;
             </div>   
 
           </div>     <!-- end quizz-nav -->
@@ -488,7 +488,7 @@
       </div> 
     </div> <!-- end quizz question question-3 infrastructure -->
 
-    <div class="question question-4 visible">
+    <div class="question question-4 ">
       <div class="quizz rooms d-flex justify-content-between align-content-start align-items-start">
         <div class="quizz-buttons">
           <h3 class="quizz-title text-uppercase text-left">какой тип квартиры вы расматриваете?</h3>
@@ -591,7 +591,7 @@
 
             <div class="quizz-nav__pagi">
               &lt; <a href="#" class="pagi step-back">предыдущий шаг</a> &emsp; &emsp; 
-              <a href="#" class="pagi step-forward notactive ">следующий шаг</a> &gt;
+              <a href="#" class="pagi step-forward notactive " data-notactive = "true">следующий шаг</a> &gt;
             </div>
 
           </div>     <!-- end quizz-nav -->
@@ -599,7 +599,7 @@
       </div> 
     </div> <!-- end quizz question question-4 rooms -->  
 
-    <div class="question question-5 visible">
+    <div class="question question-5 ">
       <div class="quizz budjet d-flex justify-content-between align-content-start align-items-start">
         <div class="quizz-buttons">
           <h3 class="quizz-title text-uppercase text-left">БЮДЖЕТ НА ПОКУПКУ КВАРТИРЫ?</h3>
@@ -668,7 +668,7 @@
 
             <div class="quizz-nav__pagi">
               &lt; <a href="#" class="pagi step-back">предыдущий шаг</a> &emsp; &emsp; 
-              <a href="#" class="pagi step-forward notactive ">следующий шаг</a> &gt;
+              <a href="#" class="pagi step-forward notactive " data-notactive = "true">следующий шаг</a> &gt;
             </div>
 
           </div>     <!-- end quizz-nav -->
@@ -676,7 +676,7 @@
       </div> 
     </div><!-- end quizz question question-5 budjet -->
 
-    <div class="question question-6 visible">
+    <div class="question question-6 ">
       <div class="quizz d-flex justify-content-between align-items-stretch">
 
         <div class="col-8 quizz-forma">
@@ -685,10 +685,10 @@
             <p class="b-forma__text">И течении 10 минут с вами свяжется наш специалист и предоставит вам самые выгодные предложения, удовлетворяющие вашим параметрам</p>
             <form class="callback clearfix w-100" id="callback-form-2">
               <div class="formhead">Введите ваш номер телефона:</div>  
-              <input form="callback-form-2" type="tel" class="icon float-left"  name="Телефон" placeholder="+7 (___) ___-__-__" required>
+              <input form="callback-form-2" type="tel" class="icon tel float-left"  name="tel" placeholder="+7 (___) ___-__-__"  required>
 
               <div class="privacy float-left">
-                <button  for="callback-form-2" type="button" class="cta-btn btn btn-warning float-right"  onclick="">
+                <button  for="callback-form-2" type="submit" class="cta-btn btn btn-warning float-right"  onclick="">
                   <img class="cta-btn__img" src="assets/img/icons/arrow-btn-ico.svg" alt="arrow icon">
                   <p class="cta-btn__text">Получить доступ</p>
                 </button>     
@@ -972,7 +972,7 @@
         </p>
         <form class="callback clearfix w-100" id="callback-form">
           <div class="formhead">Введите ваш номер телефона:</div>  
-          <input for="callback-form" type="tel" class="icon float-left"  name="Телефон" placeholder="+7 (___) ___-__-__" required>
+          <input form="callback-form" type="tel" class="icon tel float-left"  name="Телефон" placeholder="+7 (___) ___-__-__" required>
 
           <div class="privacy float-right">
             <button  class="cta-btn btn btn-warning float-right"  onclick="">
@@ -1052,6 +1052,8 @@
   </div> <!-- end container -->
 </footer>
 
-<script src ="assets/js/main.min.js"></script>    
+<!-- <script src ="assets/js/main.min.js"></script>    -->
+<script src ="assets/js/main.js"></script>   
+
 </body>
 </html>

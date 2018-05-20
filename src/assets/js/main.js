@@ -11,7 +11,7 @@
 //= custom/fontawesome-all.js
 //= custom/tooltip.js
 //= custom/popover.js
-
+//= custom/mask.js
 //= custom/quizz-best.js
 //= custom/custom.js
  

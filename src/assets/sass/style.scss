@@ -93,7 +93,6 @@ body {
 	font-size: 5rem;
 	padding: 0 5rem;
 }
-
 a {
 	color: inherit;
 	border-bottom: 1px solid $yellow;
@@ -816,6 +815,13 @@ input[type="checkbox"] { display: none; }
 			color: $font-bold-color;
 		}
 		input[type="tel"].icon {
+			padding: 10px 10px;
+			color: $font-color;
+			font-size: 18px;
+	    font-weight: 800;
+	    letter-spacing: 1.6px;
+	    text-transform: uppercase;
+			text-align: center;
 			margin-right: 30px;
 			border: 2px solid $border-color;
 			background: url(../img/icons/call-ico-black.svg) no-repeat 12% 50%;
@@ -828,6 +834,9 @@ input[type="checkbox"] { display: none; }
 			&:hover {
 				border: 2px solid $yellow;
 				transition: all 0.5s ease;  
+			}
+			&:focus {
+				border: 2px solid $green 
 			}
 		}
 		button.cta-btn {
@@ -1392,6 +1401,11 @@ input[type="checkbox"] { display: none; }
 				display: inline-block;
 				width: 293px;
 				height: 61px;
+				padding: 10px 10px;
+				text-align: center;
+				font-size: 22px;
+	   		font-weight: 800;
+	   	  letter-spacing: 1.6px;
 				border-radius: 31px;
 				color: $bg-white;
 				background-color: transparent;

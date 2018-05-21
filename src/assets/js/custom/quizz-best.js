@@ -9,7 +9,7 @@ var question = $( 'question' ),
 
 // HIDE BLOCK
 function hideBlock() {
-  $( '.visible' ).fadeOut( 10 ).removeClass( 'visible' );
+  $( '.visible' ).fadeOut( 300 ).removeClass( 'visible' );
 }
 
 // SHOW BLOCK
@@ -59,12 +59,12 @@ var yellow = '#f0cb38',
 function changeState(clicked) {
 
   // -- unblock the buttons with class step-worfard
-  clicked.parent().parent().parent().parent().parent().find( '.step-forward'  ).data("notactive", "false").removeClass( 'notactive' );
+  var rootlevel =  clicked.parent().parent().parent().parent();
+   rootlevel.find( '.step-forward'  ).data("active", "true").removeClass( 'notactive' );
 
   // -- manipulation with  state of radio buttons
 
   var displayAttr = clicked.find('input:checkbox').prop( 'checked');
-  // console.log('displayAttr до клика : ' + displayAttr);
   clicked.find( 'input:checkbox' ).toggle(displayAttr);
 
   if ( displayAttr === false ) {
@@ -80,7 +80,6 @@ function changeState(clicked) {
 		clicked.css('border-color',  border_color );
     displayAttr = false;
   }
-  //console.log('displayAttr после клика : ' + displayAttr);
 }
 
 // COLLECTING QUIZZ RESULTS
@@ -215,7 +214,7 @@ $('.location').click( function() {
     clicked.css('border-color', yellow);
     console.log('area - : ' + area); 
   }
-  $('.question-1').find( '.step-forward'  ).data("notactive", "false").removeClass( 'notactive' );
+  $('.question-1').find( '.step-forward'  ).data("active", "true").removeClass( 'notactive' );
   resultsCollecting();
 })
 
@@ -228,18 +227,21 @@ $( 'label.answer-text' ).click( function() {
 
 // Click on the button STEP-FORWARD 
 $( '.step-forward' ).click( function() {
-  var elem = $(this).data('notactive');
+  event.preventDefault();
+  var elem = $(this).data('active');
   console.log(elem);
-  if ( elem == 'false' ) { 
-      console.log(' Значение data(notactive) - false');
+  if ( elem == 'true' ) { 
+      console.log(' Значение data(active) - true');
       setTimeout( function() {
       hideBlock();
       showBlock ();
     }, 300 );
     return false; 
   }
-    if ( elem == 'true' ) {
-    console.log(' Значение data(notactive) - true');
+    if ( elem == 'false' ) {
+    console.log(' Значение data(active) - false');
+    $(this).css('border-color',  border_color );
+    $(this).delay(1000).css('border-color', 'transparent');
      return false; 
   }
 });

@@ -3,6 +3,6 @@
   $('.preloader').delay(500).fadeOut('slow'); 
 
   // for quizz & lbox & sections
-	$( 'input.icon').mask('+7(999) 999-99-99');
+	$( 'input.icon').mask('+7 (999) 999-99-99');
  
 })

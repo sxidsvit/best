@@ -1,5 +1,6 @@
 .lbox {
   display: none;
+  opacity: 0;
   // display: flex;
 	position: fixed;
   left: 0px;
@@ -11,7 +12,6 @@
   justify-content: center;
   align-items: center;
   background-color: #000;
-  opacity: 0.98;
   transition: opacity 1000ms cubic-bezier(.455, .03, .515, .955);
   .lbox-forma-wrapper {
   	// display: block;
@@ -22,7 +22,7 @@
     margin-left: auto;
     .b-forma.lbox-forma.white-forma {
 			width: 500px;
-			height: 530px;
+			height: 540px;
 			box-shadow: 0 0 45px 6px rgba(240, 203, 56, 0.13);
 			border: 10px solid $yellow;
 			background-color: $bg-white;
@@ -32,6 +32,11 @@
 			align-items: center;
 			justify-content: between;
 			position: relative;
+			.cta-btn {
+				display: inline-block;
+				min-width: 293px;
+				// width: auto;
+			}
 			.close-button {
 				position: absolute;
 				right: 15px;
@@ -84,6 +89,14 @@
 					margin-right: 0px;
 					margin-top: 0;
 					margin-bottom: 45px;
+				}
+				.privacy {
+					max-width: 293px;
+				}
+				.cta-btn {
+					// align-self: center;
+					// margin-left: auto;
+					// margin-right: auto;
 				}
 				
 

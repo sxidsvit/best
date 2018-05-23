@@ -13,5 +13,6 @@
 //= custom/popover.js
 //= custom/mask.js
 //= custom/quizz-best.js
+//= custom/lbox.js
 //= custom/custom.js
  

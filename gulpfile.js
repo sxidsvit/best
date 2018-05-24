@@ -31,6 +31,7 @@ var path = {
     },
     src: {
         html: "src/*.{htm,html}",
+				php: "src/*.php",
         js: "src/assets/js/*.js",
         css: "src/assets/sass/style.scss",
         img: "src/assets/img/**/*.*",
@@ -38,6 +39,7 @@ var path = {
     },
     watch: {
         html: "src/**/*.{htm,html}",
+				php: "src/*.php",
         js: "src/assets/js/**/*.js",
         css: "src/assets/sass/**/*.scss",
         img: "src/assets/img/**/*.*",

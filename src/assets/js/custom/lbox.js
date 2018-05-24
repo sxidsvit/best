@@ -1,3 +1,5 @@
+var dataBtnText;
+
 // Настройка формы лайтбокса	
 function formСustomization(element, dataBtnText) {
 	var lbox = $('.lbox'); 
@@ -18,7 +20,7 @@ function formСustomization(element, dataBtnText) {
 
 $('.btn-white-lbox').click(function(e) {
 	e.preventDefault();
-	var dataBtnText = $(this).data('btn_text');
+	dataBtnText = $(this).data('btn_text');
 	var element = 'white-lbox';
 	formСustomization(element, dataBtnText);
 });
@@ -26,10 +28,10 @@ $('.btn-white-lbox').click(function(e) {
 // Кнопка для отображения ЧЕРНОЙ ФОРМЫ в лайтбоксе
 $('.btn-black-lbox').click(function(e) {
 	e.preventDefault();
-	var dataBtnText = $(this).data('btn_text');
+	dataBtnText = $(this).data('btn_text');
 	var element = 'black-lbox';
 	formСustomization(element, dataBtnText);
-});
+	});
 
 // Закратия лайтбокса
 $('.lbox .close-button').click(function(e) {
@@ -39,5 +41,46 @@ $('.lbox .close-button').click(function(e) {
 
 });
 
+// Отправка формы 
 
+$('.lbox button').click(function(e) {
+	e.preventDefault();
+	var lboxForm = $(this).parent();
+	lboxForm.prepend('<input type = "hidden"  name = "Zapros from Best"></input>');
+ 	lboxForm.children('[name = "Zapros from Best"]').attr('value', dataBtnText); 
 
+// $( '#callback-form-2' ).submit( function(){
+	var tel = lboxForm.parent().parent().find('input[type="tel"]').val();
+	console.log(tel);
+
+  if( !tel ) {
+    alert( 'Пожалуйста, введите номер телефона.' );
+    return false;
+  } 
+  else {
+    var tel = 'Телефон: ' + tel;
+    try {
+      $.ajax({
+        url: './mail.php',
+        type: 'get',
+        data: { 
+        				site: 'Zapros from Best',
+                about: dataBtnText,
+                tel: tel 
+              },
+        success: function( data ){
+          console.log( 'Сообщение отправлено. tel: ' + tel);
+          alert( 'Поздравляем! Ваша заявка отправлен! Наш менеджер сейчас свяжется с вами' );
+          location.replace( 'index.html' );
+        }
+      });
+    }
+    catch (e) {
+     console.log(e);
+    }
+  }
+  return false;
+
+//}); // end '#callback-form-2'
+
+});

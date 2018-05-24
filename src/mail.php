@@ -1,19 +1,19 @@
 <?php
-
+	$site = trim($_GET["site"]);
+	$about = trim($_GET["about"]);
 	$location = trim($_GET["location"]);
 	$residential = trim($_GET["residential"]);
 	$district = trim($_GET["district"]);
 	$rooms = trim($_GET["rooms"]);
 	$decoration = trim($_GET["decoration"]);
 	$budjet = trim($_GET["budjet"]);
-	$purchase = trim($_GET["purchase"]);
+	$purchase = trim($_GET["purchase"]); 
 	$tel = trim($_GET["tel"]);
-
+ 
 	$to = "s.p.antonyuk@gmail.com";
 	$subject = "Сообщение с сайта http://ad.lekua.in.ua/best";
-	//$message = $livingPlace.'<br>'.$square.'<br> '.$additional.'<br>'.$tel ;
 
-$c = true;
+$c = true;  
 	foreach ( $_GET as $key => $value ) {
 	 	$message .= "
 			" . ( ($c = !$c) ? '<tr>':'<tr style="background-color: #f8f8f8;">' ) . "

@@ -1,0 +1,29 @@
+// Pixel Glass 
+
+html {
+    background-repeat: no-repeat;
+    background-position:  50% 0;
+    /* Mobile layout by default */
+    background-image: url( "../img/layouts/320.png" );
+  }
+  /* Tablet */
+  @media ( min-width: 768px ) {
+    html {
+      /* Tablet layout */
+      background-image: url( "../img/layouts/768.png" );
+    }
+  }
+  /* Desktop */
+  @media ( min-width: 960px ) {
+    html {
+      /* Desktop layout */
+      background-image: url( "../img/layouts/960.png" );
+    }
+  }
+ /* Monitor */
+  @media ( min-width: 1140px ) {
+    html {
+      /* Desktop layout */
+      background-image: url( "../img/layouts/1140.png" );
+    }
+  }

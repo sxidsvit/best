@@ -6,7 +6,10 @@
 //= ../../../node_modules/bootstrap/js/dist/collapse.js
 //= ../../../node_modules/bootstrap/js/dist/dropdown.js
 
+/*
 //= ../../../node_modules/pixel-glass/script.js
+*/ 
+
 //= ../../../node_modules/magnific-popup/dist/jquery.magnific-popup.js
 
 //= custom/fontawesome-all.js

@@ -17,36 +17,11 @@
 @import "../../../node_modules/magnific-popup/dist/magnific-popup"; 
 
 // Pixel Glass 
-
-html {
-    background-repeat: no-repeat;
-    background-position:  50% 0;
-    /* Mobile layout by default */
-    background-image: url( "../img/layouts/320.png" );
-  }
-  /* Tablet */
-  @media ( min-width: 768px ) {
-    html {
-      /* Tablet layout */
-      background-image: url( "../img/layouts/768.png" );
-    }
-  }
-  /* Desktop */
-  @media ( min-width: 960px ) {
-    html {
-      /* Desktop layout */
-      background-image: url( "../img/layouts/960.png" );
-    }
-  }
- /* Monitor */
-  @media ( min-width: 1140px ) {
-    html {
-      /* Desktop layout */
-      background-image: url( "../img/layouts/1140.png" );
-    }
-  }
-// end Pixel Glass 
-
+// @import "pixel-glass";
+// Preloader 
+@import "preloader";
+// lbox
+@import "lbox";
 
 body {
 	font-family: Akrobat;
@@ -54,41 +29,6 @@ body {
 	// min-height: 1050vh;
 	overflow-x: hidden;
 }
-
-// Preloader 
-.preloader {
-  position: fixed;
-  left: 0px;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  z-index: 100;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #000;
-}
-
-.preloader-content {
-	width: 80px;
-	height: 80px;
-  border: 6px solid #08bef2;
-  border-top: 6px solid $yellow;
-  border-bottom: 6px solid $yellow;
-  border-radius: 60%;
-  animation: spin 1s infinite linear;
-}
-@keyframes spin {
-    from{
-        transform: rotate(0deg);
-    }to{
-        transform: rotate(360deg);
-    }
- }
-// end preloader
-
-// lbox
-@import "lbox";
 
 р {
 	font-weight: 400;
@@ -634,11 +574,12 @@ input[type="checkbox"] { display: none; }
 	} // label[for^=infrastructure]
 
 	.group-rooms {
-		flex: 0 1 50%;
+		flex: 0 0 50%;
 		border-right: 2px solid $border-color;
 	}
 	.group-decoration {
-		flex: 0 1 45%;
+		flex: 0 0 44%;
+		padding-left: 30px;
 	}
 
 	.groups-rooms_title, .groups-decoration_title {
@@ -1637,3 +1578,6 @@ input[type="checkbox"] { display: none; }
 
 // Magnific Popup  Animation
 @import "magnific-popup-animation";
+
+// Media query 
+@import "media";

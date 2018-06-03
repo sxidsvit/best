@@ -255,7 +255,17 @@
 	.b-buklet__img { width: 500px; height: auto; margin-left: -140px; margin-top: 18px; }
 	.b-forma form.callback .privacy .cta-btn__large { z-index: 3; }
 
-	.s-address .b-address { width: 290px; }
+	.s-address .b-address { width: 290px; }	
+
+	.lbox .lbox2-forma-wrapper .container-lbox2 {
+		.b-buklet__img { width: 500px; height: auto; margin-left: -70px; margin-top: 0px; }
+	 	.b-forma__title { font-size: 20px;  line-height: 30px; z-index: 3; }
+	 	.b-forma__text { font-size: 14px; line-height: 20px; max-width: 340px;}
+	 	.b-forma form.callback .formhead { font-size: 12px; }
+	 	.b-forma form.callback { margin-top: 20px; }
+	 	.b-forma form.callback input[type="tel"].icon { margin-bottom: 20px;}
+   	.b-forma form.callback .privacy { max-width: 270px; float: none !important; }
+	}
 
 } // end media-breakpoint-down(md)
 

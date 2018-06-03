@@ -195,57 +195,67 @@
 
 	.s-details { margin-top: 30px;}
 	.s-details .b-details__title { text-align: center; }
-	.s-details .b-details__subtitle { 
-		text-align: center; max-width: 400px; margin: auto; margin-bottom: 30px;
-	}
+	.s-details .b-details__subtitle { text-align: center; max-width: 400px; margin: auto; margin-bottom: 30px; }
 	.s-details .b-details__items { 
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
 	}
-		.s-details .b-details__item { 
-			flex: 0 0 48%; 
-			&:last-child {
-				display: inline-block;
-				margin: auto;
-			}
-		}
-		
-		.s-details .b-banners {
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: space-between;
-			align-items: center;
-			padding: 10px 4% 10px 4%;
-			min-height: 200px;
-			margin-top: 30px;
-			margin-bottom: 30px;
-			.banner-1  { width: 30%; 	order: 1; padding-bottom: 10px;}
-			.banner-2  { 	width: 30%; order: 2; padding-bottom: 10px;}
-			.banner-3  { 	width: 50%; order: 4; padding-bottom: 10px;}
-			.banner-4  { 	width: 40%; order: 3; padding-bottom: 10px;}
-			.b-banners__text { order: 5; padding-bottom: 10px; line-height: 51px;}
-		}
-
-
-
-
-
-		.s-details .partner__text { font-size: 16px; line-height: 22px; }
-
-		.s-details .b-moreinfo__text {
-			font-size: 14px;
-			line-height: 22px;
-			padding-top: 50px;
-		}
-
-	.s-details .b-moreinfo__btn {
-		margin-left: -50px;
+	.s-details .b-details__item { 
+		flex: 0 0 48%; 
+		&:last-child { display: inline-block; margin: auto; }
 	}
+	.s-details .b-banners {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+		padding: 10px 4% 10px 4%;
+		min-height: 200px;
+		margin-top: 30px;
+		margin-bottom: 30px;
+		.banner-1  { width: 30%; 	order: 1; padding-bottom: 10px;}
+		.banner-2  { 	width: 30%; order: 2; padding-bottom: 10px;}
+		.banner-3  { 	width: 50%; order: 4; padding-bottom: 10px;}
+		.banner-4  { 	width: 40%; order: 3; padding-bottom: 10px;}
+		.b-banners__text { order: 5; padding-bottom: 10px; line-height: 51px;}
+	}
+	.s-details .partner__text { font-size: 16px; line-height: 22px; }
+	.s-details .b-moreinfo__text { font-size: 14px; line-height: 22px; padding-top: 50px; }
+	.s-details .b-moreinfo__btn { margin-left: -50px; }
+	.s-benefits { padding-top: 40px; }
+	.s-benefits__title { text-align: center; margin: auto; padding-bottom: 52px;}
+	.s-benefits .b-benefits-item__text { font-size: 14px; }
+	.s-benefits .b-benefits-item { padding: 30px 30px 20px 30px; }
 
+	.s-reviews { 
+		min-height: 330px;
+		padding-top: 40px;
+		padding-bottom: 46px;
+		&__title { margin-bottom: 30px;}
+		.review { flex: 0 1 32%; min-height: 320px; }
+		.review-frame { width: 100%; height: auto; }
+		.review-photo { width: 75%; height: auto;  top: 22px; left: 20px; }
+		.review-photo__text { width: 100%; height: auto;  }
+	}
+	
+	.s-ipoteka { padding-top: 0; padding-bottom: 10px; }
+	.s-ipoteka .b-ipoteka__banner {;padding-top: 70px; }
+	.s-ipoteka .b-polis__text { margin-left: 30px; margin-top: 130px; }
+	.s-ipoteka .b-polis__img-polis { margin-left: -670px; margin-top: 0px; }
+	.s-ipoteka .b-polis__img-gif { margin-left: 60px; margin-top: 204px; }
+	.s-ipoteka .b-ipoteka__title { font-size: 30px; line-height: 46px; margin-bottom: 16px; }
+	.s-ipoteka .b-partners { margin-top: 78px; margin-bottom: 60px; }
+	.s-ipoteka .partners .partner { flex: 0 0 25%; min-height: 65px; margin-bottom: 20px; }
 
+	.s-forma { min-height: 530px;}
+	.b-forma { padding-top: 50px; }
+	.b-forma__title { font-size: 30px; line-height: 46px;  }
+	.b-forma__text { font-size: 16px; line-height: 24px; }
+	.b-buklet__img { width: 500px; height: auto; margin-left: -140px; margin-top: 18px; }
+	.b-forma form.callback .privacy .cta-btn__large { z-index: 3; }
 
-
+	.s-address .b-address { width: 290px; }
 
 } // end media-breakpoint-down(md)
 

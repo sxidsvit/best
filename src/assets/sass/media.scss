@@ -124,6 +124,7 @@
 
 } // end media-breakpoint-down(lg)
 
+
 // ===============================================
 @include media-breakpoint-down(md) {
 
@@ -269,9 +270,22 @@
 
 } // end media-breakpoint-down(md)
 
-
 // ===============================================
 @include media-breakpoint-down(sm) {
+
+.top-line .brand__img { display: none;}
+.top-line .brand__text { padding-left: 0px; padding-right: 10px; }
+.top-line .tel { margin-left: 10px; }
+.hero .hero__title { font-size: 32px; line-height: 50px; margin-left: 0px; margin-top: 80px; text-align: center;}
+.hero .hero__title span { display: block; font-size: 26px; opacity: 0.6; font-weight: 600;}
+.hero .profit__item:nth-child(odd) {  margin-left: 0px; }
+.hero .cta-btn {margin: auto; margin-top: 10; margin-bottom: 40px; }
+.header_bg { max-height: 750px;}
+
+.s-quizz { display: none; }
+
+
+
 
 } // end media-breakpoint-down(sm) 
 

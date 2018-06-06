@@ -273,19 +273,75 @@
 // ===============================================
 @include media-breakpoint-down(sm) {
 
-.top-line .brand__img { display: none;}
-.top-line .brand__text { padding-left: 0px; padding-right: 10px; }
-.top-line .tel { margin-left: 10px; }
-.hero .hero__title { font-size: 32px; line-height: 50px; margin-left: 0px; margin-top: 80px; text-align: center;}
-.hero .hero__title span { display: block; font-size: 26px; opacity: 0.6; font-weight: 600;}
-.hero .profit__item:nth-child(odd) {  margin-left: 0px; }
-.hero .cta-btn {margin: auto; margin-top: 10; margin-bottom: 40px; }
-.header_bg { max-height: 750px;}
+	.top-line .brand__img { display: none;}
+	.top-line .brand__text { padding-left: 0px; padding-right: 10px; }
+	.top-line .tel { margin-left: 10px; }
+	.hero .hero__title { font-size: 32px; line-height: 50px; margin-left: 0px; margin-top: 80px; text-alig: 	;n: center;}
+	.hero .hero__title span { display: block; font-size: 26px; opacity: 0.6; font-weight: 600;}
+	.hero .profit__item:nth-child(odd) {  margin-left: 0px; }
+	.hero .cta-btn {margin: auto; margin-top: 10; margin-bottom: 40px; }
+	.header_bg { max-height: 750px;}
+	
+	.s-quizz { display: none; }
+	
+	.s-details .b-banners__text { font-size: 14px; }
+	.s-details .b-moreinfo__img {display: inline-block; width: 100%; height: auto; }
+	.s-details .b-moreinfo .btn-md-visible {display: none;}
+	.s-details .b-moreinfo .btn-md-invisible {display: block;} 
+	.s-details .b-moreinfo .moreinfo-1 { 	// float: right; 
+	}
+	.s-details .b-moreinfo .moreinfo-2 { 	// float: left;
+		position: relative;
+		.b-moreinfo__text { display: block; position: absolute; top: 20px; left: 40px;}
+		.btn-md-invisible { 
+			display: block; 
+			position: absolute; top: 130px; left: 89px;	
+			z-index: 2;
+		}
+	}
+	
+	.s-benefits { background: #f7f7f7 url("../img/bg-2-sm.png") center center;
+		 background-size: cover;  padding-top: 60px; padding-bottom: 60px;
+	}
+	
+	.s-benefits .b-benefits-item {
+	    min-width: auto;  flex: 0 0 calc(100%/2 - 10px); margin-bottom: 20px;
+	}
+	
+	.s-ipoteka {
+ .b-ipoteka__banner {text-align: center;}
+ .b-ipoteka__title  {text-align: center;}
+ .b-ipoteka__subtitle {text-align: center;}
+ .b-ipoteka .profit__item {
+		margin-left: 0px;
+		padding-bottom: 40px;
+		flex: 0 0 45%;
+	}
+  .b-polis__img-polis { margin-left: 0px; margin-top: -440px;  }
+  .b-polis__img-gif { margin-left: 360px;  margin-top: -210px; z-index: 1;}
+  .b-polis__text { margin-left: 160px;  margin-top: -200px; width: 400px;}
 
-.s-quizz { display: none; }
-
-
-
+  .b-ipoteka .profit__btn { margin-top: 80px; margin-left: 90px; z-index: 2; }
+  .b-partners { margin-top: 40px; margin-bottom: 60px; }
+  .b-partners__title { background-color: #fff;}
+	}
+	
+	.b-forma { padding-top: 50px; }
+	.b-forma__title { font-size: 30px; line-height: 46px;  }
+	.b-forma__text { font-size: 16px; line-height: 24px; }
+	
+	.b-forma form.callback { margin-bottom: 50px;}
+	.b-forma form.callback input[type="tel"].icon { width: 270px; margin-bottom: 15px;}
+	.b-forma form.callback .privacy { float: left !important ; }
+	
+	.b-buklet__img { width: 500px; height: auto; margin-left: -120px; margin-top: 22px; }
+	
+	.s-address .b-address { border: 8px solid darken(#f0f0f0, 15%); padding: 14px 20px; }
+	
+	.lbox .lbox2-forma-wrapper .container-lbox2 { 
+	  .b-forma form.callback { margin-bottom: 10px; }
+		.b-forma__title { font-size: 16px; line-height: 24px; }
+	}
 
 } // end media-breakpoint-down(sm) 
 

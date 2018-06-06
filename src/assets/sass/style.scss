@@ -53,8 +53,7 @@ input[type="checkbox"] { display: none; }
 
 .header_bg {
 	background: url("../img/hero_overlay.png"), url("../img/hero_1.png")  no-repeat 51%  47%;
-	// width: 100vw;
-	height: 897px;
+	height: 800px;
 }
 
 // Top line
@@ -188,6 +187,11 @@ input[type="checkbox"] { display: none; }
 		letter-spacing: 4.9px;	
 		margin-left: -$gutter/2-2px;
 		margin-top: 100px;	
+		span {
+			display: block;
+			// opacity: 0.6;
+			// font-weight: 600;
+		}
 	}
 }
 
@@ -1011,6 +1015,8 @@ input[type="checkbox"] { display: none; }
 			line-height: 34px;
 			letter-spacing: 0.96px;
 		}
+		.btn-md-visible {display: block;}
+		.btn-md-invisible {display: none;}
 		&__btn {
 			color: #1e1e1e;
 			font-size: 16px;

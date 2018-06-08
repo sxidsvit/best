@@ -15,6 +15,7 @@
 @import "../../../node_modules/bootstrap/scss/dropdown";
 
 @import "../../../node_modules/magnific-popup/dist/magnific-popup"; 
+@import "../../../node_modules/slick-carousel/slick/slick.css"; 
 
 // Pixel Glass 
 // @import "pixel-glass";
@@ -924,6 +925,7 @@ input[type="checkbox"] { display: none; }
 			margin-bottom: 24px;
 			letter-spacing: 2.72px;
 		}
+		.zastroischiki { display: none; }
 		&__subtitle {
 			color: #393838;
 			font-size: 19px;

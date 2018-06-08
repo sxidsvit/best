@@ -11,6 +11,9 @@
 */ 
 
 //= ../../../node_modules/magnific-popup/dist/jquery.magnific-popup.js
+//= ../../../node_modules/slick-carousel/slick/slick.js
+
+
 
 //= custom/fontawesome-all.js
 //= custom/tooltip.js

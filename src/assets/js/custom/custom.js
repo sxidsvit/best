@@ -14,6 +14,21 @@
 
 	});
 
+// Slick slider for reviews
+
+/*$( '.slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    adaptiveHeight: true, 
+    touchMove: true,
+    // variableWidth: true,
+    // centerMode: true,
+    dots: true
+}); */
+// end slider
+
+
   // for quizz & lbox & sections
 	$( 'input.icon').mask('+7 (999) 999-99-99');
  

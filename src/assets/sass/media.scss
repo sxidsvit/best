@@ -309,6 +309,7 @@
 	}
 	
  .s-ipoteka {
+ .b-ipoteka { padding-left: 15px;	 padding-right: 15px;}
  .b-ipoteka__banner {text-align: center;}
  .b-ipoteka__title  {text-align: center;}
  .b-ipoteka__subtitle {text-align: center;}
@@ -347,6 +348,7 @@
 
 
 // ===============================================
+@import "slick-dots";   
 @include media-breakpoint-down(xs) {
 
 .header_bg { min-height: 900px; }
@@ -446,6 +448,7 @@
 }
 
 .s-reviews {
+	max-height: 700px;
  &__title {
 	 max-width: 300px;
  	 font-size: 28px;
@@ -454,18 +457,78 @@
  	 margin-bottom: 40px;
 	}
  .review {
- 	min-height: 420px;
-	margin: 0 auto 30px;
-	flex: 0 0 100%;
+ 	max-height: 280px;
+ 	max-width: 240px;
+	margin: 0 auto 10px;
+	// flex: 0 0 100%;
   }
  .review-photo {
    width: 75%;
    height: auto;
-   top: 32px;
-   left: 28px;
+   top: 20px;
+   left: 16px;
    }
 
+	.slick-track {
+    left: calc(50vw - 120px);
+  }
+}  
+
+.s-ipoteka .b-ipoteka {
+	display: block; max-width: 360px; 
+	margin:  auto	; margin-bottom: 50px;
+	&__banner { font-size: 22px; padding-top: 60px;}
+	&__title { font-size: 22px; line-height: 1.4; }
+	&__subtitle { font-size: 14px; max-width: 360px; margin: auto; line-height: 1.4; margin-bottom: 30px;}
+		span {display: inline-block;}
+	.profit { margin-top: 20px; }
+  .profit__item {  
+  	flex: 0 1 100%; 
+  	justify-content: start;
+  	align-items: start;
+  	max-width: 170px;  
+  	margin: auto; 
+  	padding-bottom: 25px; 
+  	img { margin-top: 4px; margin-right: 8px; }
+    .profit__text p {
+  	font-size: 16px;
+  	line-height: 1.2;
+ 	 }
+ 	}
 }
+
+.s-ipoteka {
+	padding-bottom: 60px;
+	.b-polis__img-gif { 
+		margin-left: 350px; margin-top: -205px; 
+		width: 25px; 	height: 25px;}
+	.b-polis__img-polis { margin-left: 20px; margin-top: -460px;	}
+	.b-polis__text {  
+		margin-top: -210px;  font-size: 12px; margin-left: 170px;
+	}
+	.b-ipoteka .profit__btn { margin-top: 80px; margin: auto; 
+		.cta-btn { 
+			margin-left: 0; 
+			margin-top: 7rem;
+			margin-bottom: 0 !important;
+		}
+	}
+	.b-partners { 
+		max-width: 360px;
+		margin: auto;
+		&__title span { font-size: 12px; line-height: 1.2;}
+		&__title span:before {border: 0 }
+		&__title span:after {border: 0 }
+		.partner { 
+			flex: 0 0 50%; 
+			margin-bottom: 0;
+			margin-top: -16px;
+		}
+	}
+
+}
+
+
 
 
 } // end media-breakpoint-down(xs)

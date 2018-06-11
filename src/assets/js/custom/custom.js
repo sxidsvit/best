@@ -16,16 +16,13 @@
 
 // Slick slider for reviews
 
-/*$( '.slider').slick({
+$( '.slider').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
-    adaptiveHeight: true, 
     touchMove: true,
-    // variableWidth: true,
-    // centerMode: true,
     dots: true
-}); */
+}); 
 // end slider
 
 

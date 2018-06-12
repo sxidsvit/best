@@ -15,15 +15,29 @@
 	});
 
 // Slick slider for reviews
+function slickSlider() {
+var viewportWidth = $(window).width();
+console.log ('ViewportWidth : ' + viewportWidth);
+if ( viewportWidth <= 576) { 
+	console.log ('Я здесь. ViewportWidth : ' + viewportWidth);
+	$( '.slider').slick({
+	    slidesToShow: 1,
+	    slidesToScroll: 1,
+	    arrows: false,
+	    touchMove: true,
+	    dots: true
+	}); 
+} // endif
+} // end slickSlider
 
-$( '.slider').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: false,
-    touchMove: true,
-    dots: true
-}); 
-// end slider
+slickSlider() ;
+
+
+ window.onresize = function() {
+ 	var viewportWidth = $(window).width();
+ 	console.log ('ViewportWidth : ' + viewportWidth);
+ 	if ( viewportWidth <= 576) slickSlider() ;
+ };
 
 
   // for quizz & lbox & sections

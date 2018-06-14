@@ -53,6 +53,7 @@ input[type="radio"] { display: none; }
 input[type="checkbox"] { display: none; }
 
 .header_bg {
+	// background: url("../img/hero_overlay.png"), url("../img/hero_1.png")  no-repeat 51%  47%;
 	background: url("../img/hero_overlay.png"), url("../img/hero_1.png")  no-repeat 51%  47%;
 	height: 800px;
 }
@@ -342,7 +343,7 @@ input[type="checkbox"] { display: none; }
 	border-top: 1px solid $border-color;
 	border-bottom: 1px solid $border-color;
 		&__bg-img--piс1, &__bg-img--piс2 {
-			background: url("../img/moscow.png")  no-repeat ;
+			background:   no-repeat ;
 			background-size: cover;
 			max-width: 310px;
 			height: 250px;
@@ -350,7 +351,7 @@ input[type="checkbox"] { display: none; }
 			position: relative;
 		}
 		&__bg-img--piс2 {
-		 	background: url("../img/oblast.png")  no-repeat ;
+		 	background:  no-repeat ;
 		 	background-size: cover;
 			}
 		&__overlay {
@@ -1052,7 +1053,7 @@ input[type="checkbox"] { display: none; }
 } //Section details 
 
 .s-benefits {
-	background:  $bg-color url("../img/bg-2.png") no-repeat center center;
+	background:  $bg-color  no-repeat center center;
 	min-height: 1169px;
 	padding-top: 85px;
 	&__title {
@@ -1306,7 +1307,7 @@ input[type="checkbox"] { display: none; }
 
 // Section forma
 .s-forma {
-	background: url("../img/bg-3.png")  no-repeat center;
+	background: no-repeat center;
 	min-height: 578px;
 } // end s-forma
 
@@ -1494,7 +1495,7 @@ input[type="checkbox"] { display: none; }
 
 // Section s-adress
 .s-address {
-	background: url("../img/map_and_marker.png")  no-repeat center 38%;
+	background:  no-repeat center 38%;
 	min-height: 491px;
 	padding-top: 90px;
 	padding-bottom: 66px;

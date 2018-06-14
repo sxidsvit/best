@@ -24,6 +24,7 @@ var gulp = require("gulp"),
 var path = {
     build: {
         html: "build/",
+        mail: "build/",
         js: "build/assets/js/",
         css: "build/assets/css/",
         img: "build/assets/img/",
@@ -31,7 +32,7 @@ var path = {
     },
     src: {
         html: "src/*.{htm,html}",
-				php: "src/*.php",
+		mail: "src/*.php",
         js: "src/assets/js/*.js",
         css: "src/assets/sass/style.scss",
         img: "src/assets/img/**/*.*",
@@ -39,7 +40,7 @@ var path = {
     },
     watch: {
         html: "src/**/*.{htm,html}",
-				php: "src/*.php",
+		php: "src/*.php",
         js: "src/assets/js/**/*.js",
         css: "src/assets/sass/**/*.scss",
         img: "src/assets/img/**/*.*",
@@ -78,6 +79,11 @@ gulp.task("html:build", function () {
         .pipe(webserver.reload({stream: true}));
 });
 
+gulp.task("mail:build", function() {
+    gulp.src(path.src.mail)
+        .pipe(gulp.dest(path.build.mail));
+});
+
 
 gulp.task("css:build", function () {
     gulp.src(path.src.css)
@@ -89,7 +95,7 @@ gulp.task("css:build", function () {
         }))
         .pipe(removeComments())
         .pipe(cssbeautify())
-        .pipe(gulp.dest(path.build.css))
+        // .pipe(gulp.dest(path.build.css))
         .pipe(cssnano({
             zindex: false,
             discardComments: {
@@ -106,7 +112,7 @@ gulp.task("js:build", function () {
     gulp.src(path.src.js)
         .pipe(plumber())
         .pipe(rigger())
-        .pipe(gulp.dest(path.build.js))
+        // .pipe(gulp.dest(path.build.js))
         .pipe(uglify())
         .pipe(removeComments())
         .pipe(rename("main.min.js"))
@@ -147,6 +153,7 @@ gulp.task('build', function (cb) {
     run(
         "clean",
         "html:build",
+        "mail:build",
         "css:build",
         "js:build",
         "fonts:build",

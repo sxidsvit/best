@@ -1,18 +1,18 @@
- $(document).ready(function() {
+$(document).ready(function() {
 
-  $('.preloader').delay(500).fadeOut('slow'); 
+$('.preloader').delay(500).fadeOut('slow'); 
 
-	$('.review-photo__overlay').magnificPopup({
-		type:'image',
-		
-  // Delay in milliseconds before popup is removed
-  removalDelay: 300,
+$('.review-photo__overlay').magnificPopup({
+	type:'image',
+// Delay in milliseconds before popup is removed
+removalDelay: 300,
+// Class that is added to popup wrapper and background
+// make it unique to apply your CSS animations just to this exact popup
+mainClass: 'mfp-fade'
+});
 
-  // Class that is added to popup wrapper and background
-  // make it unique to apply your CSS animations just to this exact popup
-  mainClass: 'mfp-fade'
-
-	});
+// Lazy load 
+ $('.lazy').Lazy();
 
 // Slick slider for reviews
 function slickSlider() {

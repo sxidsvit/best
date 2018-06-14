@@ -12,6 +12,8 @@
 
 //= ../../../node_modules/magnific-popup/dist/jquery.magnific-popup.js
 //= ../../../node_modules/slick-carousel/slick/slick.js
+//= ../../../node_modules/jquery-lazy/jquery.lazy.min.js
+
 
 
 

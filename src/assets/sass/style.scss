@@ -228,7 +228,7 @@ input[type="checkbox"] { display: none; }
 	border-radius: 31px;
 	margin-top: 2px;
 	margin-left: -$gutter/2-2px;
-	padding: 23px 36px 23px 76px;
+	padding: 21px 36px 22px 76px;
 	position: relative;
 	transition: left 1s ease;	
 	outline-color: transparent;
@@ -239,7 +239,7 @@ input[type="checkbox"] { display: none; }
 		letter-spacing: 1.6px;
 		text-transform: uppercase;
 		line-height: 16px;		
-		padding: 0 0 0 0;
+		padding: 0 0 0 0px;
 		margin-bottom: 0;
 	}
 	&__img {
@@ -247,6 +247,7 @@ input[type="checkbox"] { display: none; }
 		height: 16px;
 		position: absolute;
 		left: 36px;
+		top: 25px;
 	}
 	&:hover {
 		cursor: pointer;
@@ -1584,6 +1585,9 @@ input[type="checkbox"] { display: none; }
 		}
 	}
 }
+
+// Copywrite
+@import "copywrite";
 
 // Magnific Popup  Animation
 @import "magnific-popup-animation";

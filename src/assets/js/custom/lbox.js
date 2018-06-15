@@ -45,20 +45,25 @@ $('.lbox .close-button').click(function(e) {
 
 $('.lbox button').click(function(e) {
 	e.preventDefault();
-	var lboxForm = $(this).parent();
+	var th = $(this);
+	var lboxForm = th.parent();
 	lboxForm.prepend('<input type = "hidden"  name = "Zapros from Best"></input>');
  	lboxForm.children('[name = "Zapros from Best"]').attr('value', dataBtnText); 
 
 // $( '#callback-form-2' ).submit( function(){
-	var tel = lboxForm.parent().parent().find('input[type="tel"]').val();
-	console.log(tel);
+	var inputTel = lboxForm.parent().parent().find('input[type="tel"]');
+	var tel = inputTel.val();
+	console.log('tel : ',tel); console.log('inputTel : ',inputTel); 
 
   if( !tel ) {
+    inputTel.addClass('error');
     alert( 'Пожалуйста, введите номер телефона.' );
     return false;
   } 
   else {
     var tel = 'Телефон: ' + tel;
+    inputTel.removeClass('error');
+    inputTel.addClass('done');
     try {
       $.ajax({
         url: './mail.php',
@@ -69,6 +74,9 @@ $('.lbox button').click(function(e) {
                 tel: tel 
               },
         success: function( data ){
+        	inputTel.removeClass('done');
+    			inputTel.addClass('vis');
+    			th.trigger('reset');
           console.log( 'Сообщение отправлено. tel: ' + tel);
           alert( 'Поздравляем! Ваша заявка отправлен! Наш менеджер сейчас свяжется с вами' );
           location.replace( 'index.html' );

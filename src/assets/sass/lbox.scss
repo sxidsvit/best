@@ -97,6 +97,7 @@
 					// align-self: center;
 					// margin-left: auto;
 					// margin-right: auto;
+					&__text { padding: 0 0 0 15px; }
 				}
 				
 
@@ -173,3 +174,10 @@
     } //.container-lbox2 
 	} // .lbox2-forma-wrapper
 } // end lbox
+
+// Служебные сообщения притправке формы
+.b-forma.white-forma form.callback input[type=tel].icon {
+	&.error { border: 2px solid $red; }
+	&.done { 	border: 2px solid $green; }
+	&.vis { border: 2px solid $blue; }
+}

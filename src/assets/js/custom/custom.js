@@ -19,7 +19,6 @@ function slickSlider() {
 var viewportWidth = window.innerWidth;
 console.log ('ViewportWidth (window.innerWidth): ' + viewportWidth);
 if ( viewportWidth <= 576) { 
-	console.log ('Я здесь. ViewportWidth : ' + viewportWidth);
 	$( '.slider').slick({
 	    slidesToShow: 1,
 	    slidesToScroll: 1,

@@ -1,0 +1,28 @@
+// copywrite
+.copyright {
+	background-color: darken($bg-color, 90%);
+	padding: 0 8px;
+	.my-copywrite {
+		padding: 0 8px;
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	  color:  $yellow;
+	  font-size: 0.6rem;
+	  line-height: 2rem;
+	  .copy-simbol {
+	 	  color:  $yellow;
+	  	font-size: 1rem;
+	  }
+	  a { border-bottom: 0;}
+	  .copy-text {
+	  	font-size: 0.7rem;
+	  }
+	  .copy-link {
+	 	 color:  $yellow;
+	 	 font-size: 1rem;
+	   text-decoration: none;
+		 // margin-bottom: 4px;
+		}
+	}
+}

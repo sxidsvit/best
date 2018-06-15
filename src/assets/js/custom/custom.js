@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-$('.preloader').delay(500).fadeOut('slow'); 
+$('.preloader').delay(1500).fadeOut('slow'); 
 
 $('.review-photo__overlay').magnificPopup({
 	type:'image',
@@ -16,8 +16,8 @@ mainClass: 'mfp-fade'
 
 // Slick slider for reviews
 function slickSlider() {
-var viewportWidth = $(window).width();
-console.log ('ViewportWidth : ' + viewportWidth);
+var viewportWidth = window.innerWidth;
+console.log ('ViewportWidth (window.innerWidth): ' + viewportWidth);
 if ( viewportWidth <= 576) { 
 	console.log ('Я здесь. ViewportWidth : ' + viewportWidth);
 	$( '.slider').slick({
@@ -34,8 +34,8 @@ slickSlider() ;
 
 
  window.onresize = function() {
- 	var viewportWidth = $(window).width();
- 	console.log ('ViewportWidth : ' + viewportWidth);
+ 	var viewportWidth = window.innerWidth;
+ 	console.log ('ViewportWidth (window.innerWidth): ' + viewportWidth);
  	if ( viewportWidth <= 576) slickSlider() ;
  };
 

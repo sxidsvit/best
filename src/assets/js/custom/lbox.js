@@ -16,6 +16,16 @@ function formСustomization(element, dataBtnText) {
 	}
 }
 
+// Вместо quizz
+	$('#quizz-md').click(function(e) {
+		if (  window.innerWidth <= 768 ) {
+			e.preventDefault();
+			dataBtnText = $(this).data('btn_text');
+			var element = 'white-lbox';
+			formСustomization(element, dataBtnText);
+		}
+	});
+
 // Кнопка для отображения БЕЛОЙ ФОРМЫ в лайтбоксе
 
 $('.btn-white-lbox').click(function(e) {

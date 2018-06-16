@@ -1,0 +1,22 @@
+.gloss {
+	overflow: hidden;
+	&::after {
+     background: #fff;
+     content: "";
+     height: 285px;
+     left: -0px;
+     opacity: .2;
+     position: absolute;
+     top: -50px;
+     transform: rotate(35deg);
+     transition: all .4s;
+     width: 70px;
+     z-index: 1;
+     animation: gloss 4s ease-out 0s infinite;
+	}
+}
+
+@keyframes gloss {
+	0% {left:-230px}
+	100%,15% {left:260px}
+}

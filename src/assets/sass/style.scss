@@ -21,8 +21,12 @@
 // @import "pixel-glass";
 // Preloader 
 @import "preloader";
+
 // lbox
 @import "lbox";
+
+// gloss - глянец над кнопкой
+@import "gloss";
 
 body {
 	font-family: Akrobat;
@@ -56,6 +60,7 @@ input[type="checkbox"] { display: none; }
 	// background: url("../img/hero_overlay.png"), url("../img/hero_1.png")  no-repeat 51%  47%;
 	background: url("../img/hero_overlay.png"), url("../img/hero_1.jpg")  no-repeat 51%  47%;
 	height: 800px;
+	background-attachment: fixed;
 }
 
 // Top line
@@ -1055,6 +1060,7 @@ input[type="checkbox"] { display: none; }
 
 .s-benefits {
 	background:  $bg-color  no-repeat center center;
+	background-attachment: fixed;
 	min-height: 1169px;
 	padding-top: 85px;
 	&__title {
@@ -1077,6 +1083,17 @@ input[type="checkbox"] { display: none; }
 			width: auto;
 			height: 62px;
 			margin-bottom: 30px;
+			transform-origin: top center;
+			&:hover {
+				animation: swing 1s infinite linear;
+				@keyframes swing {
+					20%{transform:rotate3d(0,0,1,15deg)}
+					40%{transform:rotate3d(0,0,1,-10deg)}
+					60%{transform:rotate3d(0,0,1,5deg)}
+					80%{transform:rotate3d(0,0,1,-5deg)}
+					100%{transform:rotate3d(0,0,1,0deg)}
+				}
+			}
 		}
 		&__body{
 			color: #fff;
@@ -1309,6 +1326,7 @@ input[type="checkbox"] { display: none; }
 // Section forma
 .s-forma {
 	background: no-repeat center;
+	background-attachment: fixed;
 	min-height: 578px;
 } // end s-forma
 
@@ -1497,6 +1515,7 @@ input[type="checkbox"] { display: none; }
 // Section s-adress
 .s-address {
 	background:  no-repeat center 38%;
+	background-attachment: fixed;
 	min-height: 491px;
 	padding-top: 90px;
 	padding-bottom: 66px;

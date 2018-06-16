@@ -1,4 +1,4 @@
-var dataBtnText;
+var dataBtnText, md;
 
 // Настройка формы лайтбокса	
 function formСustomization(element, dataBtnText) {
@@ -16,9 +16,9 @@ function formСustomization(element, dataBtnText) {
 	}
 }
 
-// Вместо quizz
+// Вместо quizz на md и ниже экранах
 	$('#quizz-md').click(function(e) {
-		if (  window.innerWidth <= 768 ) {
+		if (  window.innerWidth <= md ) {
 			e.preventDefault();
 			dataBtnText = $(this).data('btn_text');
 			var element = 'white-lbox';

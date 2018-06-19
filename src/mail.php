@@ -1,4 +1,6 @@
 <?php
+header('Content-type: text/html');
+header('Access-Control-Allow-Origin: *');
 	$site = trim($_GET["site"]);
 	$about = trim($_GET["about"]);
 	$location = trim($_GET["location"]);

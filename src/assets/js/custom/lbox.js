@@ -78,14 +78,14 @@ checking ($('#callback-form-lbox2'));
 
 // Отправка формы 
 
-$('.lbox button').click(function(e) {
-	e.preventDefault();
-	var th = $(this);
-	var lboxForm = th.parent();
+
+function clickSubmit(elem) {
+	// var th = elem;
+	// console.log('th : ' + th[0]);
+	var lboxForm = elem.parent();
 	lboxForm.prepend('<input type = "hidden"  name = "Zapros from Best"></input>');
  	lboxForm.children('[name = "Zapros from Best"]').attr('value', dataBtnText); 
 
-// $( '#callback-form-2' ).submit( function(){
 	var inputTel = lboxForm.parent().parent().find('input[type="tel"]');
 	var tel = inputTel.val();
 	console.log('tel : ',tel); console.log('inputTel : ',inputTel); 
@@ -111,7 +111,7 @@ $('.lbox button').click(function(e) {
         success: function( data ){
         	inputTel.removeClass('done');
     			inputTel.addClass('vis');
-    			th.trigger('reset');
+    			elem.trigger('reset');
           console.log( 'Сообщение отправлено. tel: ' + tel);
           alert( 'Поздравляем! Ваша заявка отправлен! Наш менеджер сейчас свяжется с вами' );
           location.replace( 'index.html' );
@@ -121,9 +121,23 @@ $('.lbox button').click(function(e) {
     catch (e) {
      console.log(e);
     }
-  }
+  }  // endelse
   return false;
+} ; //end clickSubmit
 
-//}); // end '#callback-form-2'
 
+$('.lbox button').click( function(e) { 
+  e.preventDefault();
+	var elem = $(this);
+	console.log('e : ' + elem);
+	clickSubmit(elem);
 });
+
+$('.s-forma button').click( function(e) { 
+  e.preventDefault();
+	var elem = $(this);
+	console.log('e : ' + elem);
+	clickSubmit(elem); 
+});
+
+// end click(function(e)

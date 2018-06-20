@@ -15,8 +15,6 @@
 //= ../../../node_modules/jquery-lazy/jquery.lazy.min.js
 
 
-
-
 //= custom/fontawesome-all.js
 //= custom/tooltip.js
 //= custom/popover.js

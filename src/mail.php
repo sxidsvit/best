@@ -13,7 +13,7 @@ header('Access-Control-Allow-Origin: *');
 	$tel = trim($_GET["tel"]);
  
 	$to = "s.p.antonyuk@gmail.com";
-	$subject = "Сообщение с сайта http://ad.lekua.in.ua/best";
+	$subject = "Сообщение с сайта http://best.lekua.in.ua";
 
 $c = true;  
 	foreach ( $_GET as $key => $value ) {
@@ -29,7 +29,7 @@ function adopt($text) {
 	return '=?UTF-8?B?'.Base64_encode($text).'?=';
 }
 
-$site_email = "sergeyh@voliacable.com";
+$site_email = "s.p.antonyuk@gmail.com";
 $project_name = "Недвижимость БЕСТ";
 
 $headers = "MIME-Version: 1.0" . PHP_EOL .

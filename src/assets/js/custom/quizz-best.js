@@ -266,7 +266,7 @@ $( '#callback-form-2' ).submit( function(){
     var tel = 'Телефон: ' + $( 'input[type="tel"].tel' ).val();
     try {
       $.ajax({
-        url: './mail.php',
+        url: 'http://ad.lekua.in.ua/mails/mail-best.php',
         type: 'get',
         data: { 
                 location: location,

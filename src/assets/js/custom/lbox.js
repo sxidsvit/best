@@ -51,6 +51,32 @@ $('.lbox .close-button').click(function(e) {
 
 });
 
+ // Проверка чекнутости инпута у кнопки отправки
+  
+
+ function checking(e) {
+ 	e.each(function(){
+    var $form = $(this);
+    //$form.find('button[type="submit"]').prop('disabled', true);
+    if( $form.find('input[type="checkbox"]').is(':checked') ) {
+      $form.find('button[type="submit"]').prop('disabled', false);
+    } else {
+      $form.find('button[type="submit"]').prop('disabled', true);
+    }
+    $form.find('input[type="checkbox"]').click(function(){
+      if( $(this).is(':checked') ) {
+        $(this).parents().find('button[type="submit"]').prop('disabled', false);
+      } else {
+        $(this).parent().find('button[type="submit"]').prop('disabled', true);
+      }
+    });
+  });
+ };
+
+checking ($('#callback-form'));
+checking ($('#callback-form-lbox'));
+checking ($('#callback-form-lbox2'));
+
 // Отправка формы 
 
 $('.lbox button').click(function(e) {
@@ -76,7 +102,7 @@ $('.lbox button').click(function(e) {
     inputTel.addClass('done');
     try {
       $.ajax({
-        url: './mail.php',
+        url: 'http://ad.lekua.in.ua/mails/mail-best.php',
         type: 'get',
         data: { 
         				site: 'Zapros from Best',

@@ -38,6 +38,12 @@ slickSlider() ;
  	if ( viewportWidth <= 576) slickSlider() ;
  };
 
+  $('.scrollquizz').click(function(event){
+    event.preventDefault();
+    var id = $(this).attr('href'),
+    top = $(id).offset().top;
+    $('body,html').animate({scrollTop: top}, 1000);
+  });
 
   // for quizz & lbox & sections
 	$( 'input.icon').mask('+7 (999) 999-99-99');

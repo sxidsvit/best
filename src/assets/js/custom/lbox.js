@@ -53,7 +53,6 @@ $('.lbox .close-button').click(function(e) {
 
  // Проверка чекнутости инпута у кнопки отправки
   
-
  function checking(e) {
  	e.each(function(){
     var $form = $(this);

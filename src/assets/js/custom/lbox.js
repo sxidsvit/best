@@ -36,12 +36,12 @@ $('.btn-white-lbox').click(function(e) {
 });
 
 // Кнопка для отображения ЧЕРНОЙ ФОРМЫ в лайтбоксе
-$('.btn-black-lbox').click(function(e) {
-	e.preventDefault();
-	dataBtnText = $(this).data('btn_text');
-	var element = 'black-lbox';
-	formСustomization(element, dataBtnText);
-	});
+// $('.btn-black-lbox').click(function(e) {
+// 	e.preventDefault();
+// 	dataBtnText = $(this).data('btn_text');
+// 	var element = 'black-lbox';
+// 	formСustomization(element, dataBtnText);
+// 	});
 
 // Закратия лайтбокса
 $('.lbox .close-button').click(function(e) {
@@ -78,10 +78,10 @@ checking ($('#callback-form-lbox2'));
 
 // Отправка формы 
 
-
-function clickSubmit(elem) {
+function clickSubmit(elem, lbox) {
 	// var th = elem;
 	// console.log('th : ' + th[0]);
+  lbox = lbox || true;
 	var lboxForm = elem.parent();
 	lboxForm.prepend('<input type = "hidden"  name = "Zapros from Best"></input>');
  	lboxForm.children('[name = "Zapros from Best"]').attr('value', dataBtnText); 
@@ -125,6 +125,7 @@ function clickSubmit(elem) {
   return false;
 } ; //end clickSubmit
 
+// Отправка светлой формы с лайтбокса 
 
 $('.lbox button').click( function(e) { 
   e.preventDefault();
@@ -132,6 +133,8 @@ $('.lbox button').click( function(e) {
 	console.log('e : ' + elem);
 	clickSubmit(elem);
 });
+
+// Отправка темной формы из секции лендинга 
 
 $('.s-forma button').click( function(e) { 
   e.preventDefault();

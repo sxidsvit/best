@@ -46,7 +46,10 @@ var path = {
         img: "src/assets/img/**/*.*",
         fonts: "src/assets/fonts/**/*.*"
     },
-    clean: "./build"
+    clean: {
+        build: "./build", 
+        docs: "./docs"
+    }
 };
 
 
@@ -95,7 +98,7 @@ gulp.task("css:build", function () {
         }))
         .pipe(removeComments())
         .pipe(cssbeautify())
-        // .pipe(gulp.dest(path.build.css))
+        .pipe(gulp.dest(path.build.css))
         .pipe(cssnano({
             zindex: false,
             discardComments: {
@@ -145,22 +148,35 @@ gulp.task("image:build", function () {
 });
 
 
-gulp.task("clean", function (cb) {
-    rimraf(path.clean, cb);
+gulp.task("clean:build", function (cb) {
+    rimraf(path.clean.build, cb);
+});
+
+gulp.task("clean:docs", function (cb) {
+    rimraf(path.clean.docs, cb);
+});
+
+gulp.task("docs", ["clean:docs"], function () {
+    gulp.src('./build/**/*.*', { base: './build'}).pipe(gulp.dest('docs'));
 });
 
 
 gulp.task('build', function (cb) {
     run(
-        "clean",
+        "clean:build",
         "html:build",
         "mail:build",
         "css:build",
         "js:build",
         "fonts:build",
-        "image:build"
+        "image:build",
+        "docs"
+        // "docs"
     , cb);
 });
+
+
+
 
 
 gulp.task("watch", function() {
@@ -184,8 +200,9 @@ gulp.task("watch", function() {
 
 gulp.task("default", function (cb) {
    run(
-       "clean",
+       "clean:build",
        "build",
+       "docs",
        "webserver",
        "watch"
    , cb);
